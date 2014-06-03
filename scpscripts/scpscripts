@@ -1,0 +1,3 @@
+scp -r s1367329@sshgate.see.ed.ac.uk:/home/engbiome/ControlsMEG/* /home/alexgmcm/data/ControlsMEG
+
+scp -r s1367329@sshgate.see.ed.ac.uk:/home/engbiome/MEG_AD_Thesis/* /home/alexgmcm/data/MEG_AD_Thesis
