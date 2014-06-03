@@ -44,3 +44,8 @@ Todo
 Artefact Rejection -> Filtering - > Calculate relative powers -> average over time and brain regions -> linear regression against age -> test on healthy -> try on diseased -> see if deviation correlates with cognitive scores
 
 Ask Javier if when filtering will apply the filter to each epoch separately - as surely after epoch rejection we can't treat non-consecutive epochs as consecutive as this will effect the observed frequency components??
+
+load data in 5 second segments in the same structure that FieldTrip would result in after segmentation (see result of importscript.m - 030614.mat) by using loadmegdata but calcualte the correct indices for non-overlapping 5 second windows, discard the final bit of the signal < 5 seconds.
+
+also either skip the corruptions using the info in corruptions.txt, or use a try statement to skip to the next five second window if it fails (and print message)
+

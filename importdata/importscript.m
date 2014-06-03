@@ -40,3 +40,14 @@ fsample=169.549; %See 'Spectral Changes in spontaneous MEG activity across the l
 
 
 %data folder is 22gb therefore cannot load all into RAM must deal one at a time
+
+%let's try to load one file in FieldTrip so we can compare the output of the artefact rejection to javier's script
+
+currentData = loadStructuredData('AFAL38.DATA');
+
+ cfg = [];
+ cfg.length = 5; %length of segment in seconds
+ cfg.overlap =0;
+% data_ref                 = ft_preprocessing(cfg, currentData);
+%segment data into 5 second epochs, no overlap, lose data at the end of the signal
+ segmentedData = ft_redefinetrial(cfg, currentData)
