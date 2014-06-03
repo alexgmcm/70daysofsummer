@@ -18,18 +18,20 @@ filenames= {dirData(3:length(dirData)).name};
 Nchan=148;
 fsample=169.549; %See 'Spectral Changes in spontaneous MEG activity across the lifespan', Gómez et al. (2013)
 
-%data(length(filenames))= struct('label',[], 'fsample',[], 'trial',[], 'time',[], 'trialinfo',[]); OLD UNNESTED CODE
-label=cellstr(num2str([1:Nchan]'));
-strippedfilenames=cellfun(@stripFileExtension,filenames,'UniformOutput', false);
+%OLD CODE NOW LARGELY HANDLED BY loadStructuredData.m
+
+	% %data(length(filenames))= struct('label',[], 'fsample',[], 'trial',[], 'time',[], 'trialinfo',[]); OLD UNNESTED CODE
+	% label=cellstr(num2str([1:Nchan]'));
+	% strippedfilenames=cellfun(@stripFileExtension,filenames,'UniformOutput', false);
 
 
-for i=1:length(filenames)
-	data.(strippedfilenames{i}).label=label;
-	MEGData = loadMEGData(strcat(dataDir,filenames{i}));
-	data.(strippedfilenames{i}).fsample=fsample;
-	data.(strippedfilenames{i}).trial={MEGData(:,2:end)'};
-	data.(strippedfilenames{i}).time={MEGData(:,1)'};
-end
+	% for i=1:length(filenames)
+	% 	data.(strippedfilenames{i}).label=label;
+	% 	MEGData = loadMEGData(strcat(dataDir,filenames{i}));
+	% 	data.(strippedfilenames{i}).fsample=fsample;
+	% 	data.(strippedfilenames{i}).trial={MEGData(:,2:end)'};
+	% 	data.(strippedfilenames{i}).time={MEGData(:,1)'};
+	% end
 
 %just use for loops to assign the fields - doesn't seem to vectorise easily?
 
