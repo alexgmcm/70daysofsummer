@@ -51,4 +51,6 @@ load data in 5 second segments in the same structure that FieldTrip would result
 
 also either skip the corruptions using the info in corruptions.txt, or use a try statement to skip to the next five second window if it fails (and print message)
 
-make sure scripts will be compatible with alzheimers data - don't want to have to rewrite stuff
+make sure scripts will be compatible with alzheimers data - don't want to have to rewrite stuff - but that data is saved differently, probably inevitable
+
+ask javier if there was a reason they used the median maximum displacement rather than the z-score (i.e. the standard deviation of the signal across all time) as a measure of abnormal deviation

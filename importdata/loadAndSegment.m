@@ -6,7 +6,7 @@ function segmentedData = loadAndSegment(filename)
 	%assume filename is just the filename - see importscript
 	dataDir='~/data/ControlsMEG/';
 	%test code
-	filename='AFAL38.DATA';
+	%filename='AFAL38.DATA';
 	Nchan=148; %no. of MEG channels
 	fsample=169.55;
 	%sampling rate in Hz
@@ -69,9 +69,12 @@ function segmentedData = loadAndSegment(filename)
 %load data in little segments stored in segmentedData.trial cellarray (1x nSegs) of segment arrays (nChans*nSampPerSeg)
 %if we do it one at a time then with a try statement to skip corruptions then we don't have to deal with them in an awkward way
 %hopefully multiple loadMEGData calls won't be *too* much slower than a single call or few calls only where there are corruptions
+%if this proves to be too slow can do this later
 
 nSegs = floor(numlines/nSampPerSeg);
 j=1;
+segmentedData.trial=cell(1,nSegs);
+
 for i=1:nSegs
 	try
 	currentSeg=loadMEGData(strcat(dataDir,filename),sampleInfo(i,1),sampleInfo(i,2));
