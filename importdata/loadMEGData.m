@@ -1,4 +1,5 @@
-function MEGData = loadMEGData(filename,startRow)
+function MEGData = loadMEGData(filename,startRow, endRow)
+%startRow and endRow are inclusive!
 %set delimiter as tab
 delimiter = '\t';
 
@@ -8,9 +9,9 @@ formatSpec=repmat('%f',1,150);
 %Read whole file
 if nargin ==1
  	startRow = 1;
- end
- endRow = inf;
-
+elseif nargin==2
+ 	endRow = inf;
+end
 %% Open the text file.
 fileID = fopen(filename,'r');
 

@@ -9,7 +9,7 @@ function dataStructure = loadStucturedData(filename)
 	dataDir='~/data/ControlsMEG/';
 
 	Nchan=148;
-	fsample=169.549; %See 'Spectral Changes in spontaneous MEG activity across the lifespan', Gómez et al. (2013)
+	fsample=169.55; %See 'Spectral Changes in spontaneous MEG activity across the lifespan', Gómez et al. (2013)
 
 	dataStructure.fsample=fsample;
 	dataStructure.label=cellstr(num2str([1:Nchan]'));

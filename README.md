@@ -5,6 +5,8 @@ Notes
 -------
 Data consists of time vector + 148 MEG channels, sampling rate is 169.549Hz except for 300mb files which are at 678.17Hz and require downsampling etc.
 
+Alzheimers data has sampling rate of 169.55Hz so basically the same (it is the same.)
+
 Some of the data is corrupted - the corruptions are noted in filename,linenumber format in corruptions.txt, be careful not to attempt to load these lines - split the loading into bits before and after the line and then concatenate the matrices.
 
 The data files which are ~300mb have not been downsampled, these should be low pass filtered and then take one of every 4 - the decimate function does this pretty much automatically, although it will not be identical to how the MEG hardware downsampled the others and so if the samples prove to be problematic in later analysis they should be discarded.
@@ -49,3 +51,4 @@ load data in 5 second segments in the same structure that FieldTrip would result
 
 also either skip the corruptions using the info in corruptions.txt, or use a try statement to skip to the next five second window if it fails (and print message)
 
+make sure scripts will be compatible with alzheimers data - don't want to have to rewrite stuff
