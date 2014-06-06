@@ -19,7 +19,7 @@ function segmentedData = loadAndSegment(filename)
 	%get length of signal (i.e. number of lines)
 	[status, result] = system( ['wc -l ', strcat(dataDir, filename)] );
 	numlinesstr = regexp(result, '(^[0-9]+)?', 'match');
-	numlines = str2num( numlinesstr{1} );
+	numlines = str2num( numlinesstr{1,1} );
 
 
 	%segments will not overlap.

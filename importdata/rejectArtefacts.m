@@ -1,4 +1,4 @@
-function [cleanEpochs, segmentedSignal] =  rejectArtefacts(signal,thresholdScale)
+function [cleanEpochs, segmentedSignal,segmentedTime,upsigbounds,lowsigbounds] =  rejectArtefacts(signal,thresholdScale)
  
  %return indices of clean epochs in signal and segmented signal
  % based on rechazo_artefactos2.m written by Jesús Poza Crespo and modified by Javier Escudero Rodríguez
@@ -12,18 +12,21 @@ function [cleanEpochs, segmentedSignal] =  rejectArtefacts(signal,thresholdScale
 
 %Let signal be of shape (nSamples*nChans)
 %Remember to remove time vector from data when passing signal
+time=signal(:,1);
+signal=signal(:,2:end);
+
 nSamples=size(signal,1);
 nChans = size(signal,2);
 %preallocate array
 epochTime = 5; %epoch length in seconds
 samplingRate = 169.55; %sampling rate in Hz
-epochLength = round(epochTime * samplingRate); %number of samples per epoch
+epochLength = floor(epochTime * samplingRate); %number of samples per epoch
 miniSegLength=100; %number of samples per minisegment
 nMiniSegs=floor(nSamples/miniSegLength); %number of minisegments
 nEpochs=floor(nSamples/epochLength);%number of epochs
 
 cleanEpochs=zeros(nEpochs,nChans);
-%thresholdScale = 3.5; Usually 3-4
+%thresholdScale = 3.5; Usually 3-4, 2.1 got agreement with rechazo when rechazo was at 3
 
 
 %subtract the median from the signal so we can measure the deviation from the median
@@ -55,8 +58,12 @@ medianDeviation=median(devVals,1);
 thresholdValues=medianDeviation.*thresholdScale;
 
 epochCellArray=mat2cell(medianSubtractedSignal,[ones(1,nEpochs)*epochLength mod(nSamples,epochLength)],[148]);
-%remove final piece as it is not 5 seconds long
-epochCellArray(end)=[];
+%remove final piece if it is not 5 seconds long
+
+if size(epochCellArray{end},1) < epochLength
+	epochCellArray(end)=[];
+end
+
 maxepochvals = cellfun(@(x)abs(max(x,[],1)), epochCellArray, 'UniformOutput', false);
  %get absolute value of maximum value of each channel at each epoch
 minepochvals = cellfun(@(x)abs(min(x,[],1)), epochCellArray, 'UniformOutput', false);
@@ -64,11 +71,21 @@ minepochvals = cellfun(@(x)abs(min(x,[],1)), epochCellArray, 'UniformOutput', fa
 cleanEpochs=cellfun(@(x,y)((x<thresholdValues)&(y<thresholdValues)),maxepochvals,minepochvals,'UniformOutput',false);
 numArtefacts=(nEpochs*nChans)-sum(sum(cell2mat(cleanEpochs)))
 percentageArtefacts=(numArtefacts./(nEpochs*nChans))*100
-totalEpochs=nEpochs*nChans
+totalEpochs=nEpochs*nChans;
 %return segmented signal as well (might as well...)
 segmentedSignal=mat2cell(signal,[ones(1,nEpochs)*epochLength mod(nSamples,epochLength)],[148]);
-segmentedSignal(end)=[];
 
+if size(segmentedSignal{end},1) < epochLength
+	segmentedSignal(end)=[];
+end
+
+segmentedTime = mat2cell(time,[ones(1,nEpochs)*epochLength mod(nSamples,epochLength)],[1]);
+if size(segmentedTime{end},1) < epochLength
+	segmentedTime(end)=[];
+end
+
+upsigbounds=median(signal,1) + thresholdValues;
+lowsigbounds=median(signal,1) - thresholdValues;
 
 
 end
