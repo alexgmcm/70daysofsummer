@@ -55,8 +55,15 @@ for i=1:length(filenames)
 
 
 %rejection code
-	reconstructedArray=reshape(segmentedSignal{1}(repmat(cleanEpochs{1},size(segmentedSignal{1},1),1)),size(segmentedSignal{1},1),sum(cleanEpochs{1})); %need to reshape
-	channels=[1:148](cleanEpochs{1});
+
+
+	reconstructedEpoch=reshape(segmentedSignal{1}(repmat(cleanEpochs{1},size(segmentedSignal{1},1),1)),size(segmentedSignal{1},1),sum(cleanEpochs{1})); %need to reshape
+	temp=[1:148];
+	channelsinEpoch=temp(cleanEpochs{1});
+
+
+	%vectorise this to apply it to all epochs then save the result as it will be reduced in size,
+	%then we get the fun of filters...
 
 %save file code (use StripFileExtension on filename and strcat to get new extension)
 
