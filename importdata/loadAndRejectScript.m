@@ -9,7 +9,7 @@ dirData=dir(dataDir);
 filenames= {dirData(3:length(dirData)).name};
 
 %for each filename, check if it is in the corruptions - they need special treatment...
-
+percentageArtefacts=zeros(length(filenames),1);
 for i=1:length(filenames)
 	if ~ismember(filenames{i},errors(:,1)) %returns 0 if file contains corruptions, 1 otherwise (not the negation ~)
 		%normal handling code
@@ -25,7 +25,7 @@ for i=1:length(filenames)
 		clear MEGData;
 		MEGData = [];
 		%get number of lines in file
-		[status, result] = system( ['wc -l ', strcat(dataDir, filename)] );
+		[status, result] = system( ['wc -l ', strcat(dataDir, filenames{i})] );
 		numlinesstr = regexp(result, '(^[0-9]+)?', 'match');
 		numlines = str2num( numlinesstr{1,1} );
 
@@ -39,13 +39,24 @@ for i=1:length(filenames)
 				disp(exception.message);
 			end
 		end
+
+	
 	end
 
 %artefact detection code
+	thresholdScale = 2.5;
+	%2.5 gets mean(percentageArtefacts)=9.26, max(percentageArtefacts)=78.76, median(percentageArtefacts)=6.17
+	%so it seems a good choice as it isn't rejecting too much of any data but is removing the worst artefacts
+	%run run_rechazo with 2.5?
+
+	[cleanEpochs, segmentedSignal,segmentedTime,~,~,percentageArtefacts(i)] =  rejectArtefacts(MEGData,thresholdScale);
+	%pause
+
 
 
 %rejection code
-
+	reconstructedArray=reshape(segmentedSignal{1}(repmat(cleanEpochs{1},size(segmentedSignal{1},1),1)),size(segmentedSignal{1},1),sum(cleanEpochs{1})); %need to reshape
+	channels=[1:148](cleanEpochs{1});
 
 %save file code (use StripFileExtension on filename and strcat to get new extension)
 

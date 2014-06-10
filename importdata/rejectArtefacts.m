@@ -1,4 +1,4 @@
-function [cleanEpochs, segmentedSignal,segmentedTime,upsigbounds,lowsigbounds] =  rejectArtefacts(signal,thresholdScale)
+function [cleanEpochs, segmentedSignal,segmentedTime,upsigbounds,lowsigbounds,percentageArtefacts] =  rejectArtefacts(signal,thresholdScale)
  
  %return indices of clean epochs in signal and segmented signal
  % based on rechazo_artefactos2.m written by Jesús Poza Crespo and modified by Javier Escudero Rodríguez
