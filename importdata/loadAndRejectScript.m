@@ -57,16 +57,17 @@ for i=1:length(filenames)
 %rejection code
 
 
-	reconstructedEpoch=reshape(segmentedSignal{1}(repmat(cleanEpochs{1},size(segmentedSignal{1},1),1)),size(segmentedSignal{1},1),sum(cleanEpochs{1})); %need to reshape
+	%reconstructedEpoch=reshape(segmentedSignal{1}(repmat(cleanEpochs{1},size(segmentedSignal{1},1),1)),size(segmentedSignal{1},1),sum(cleanEpochs{1})); %need to reshape
 	temp=[1:148];
-	channelsinEpoch=temp(cleanEpochs{1});
+	channelsinEpoch=cellfun(@(x)temp(x),cleanEpochs,'UniformOutput',false);
 
-
+	reconstructedEpochs=cellfun(@(x,y)reshape(x(repmat(y,size(x,1),1)),size(x,1),sum(y)),segmentedSignal,cleanEpochs,'UniformOutput',false);
 	%vectorise this to apply it to all epochs then save the result as it will be reduced in size,
 	%then we get the fun of filters...
 
-%save file code (use StripFileExtension on filename and strcat to get new extension)
-
+	%save file code (use StripFileExtension on filename and strcat to get new extension)
+	
+	save(strcat('/media/alexgmcm/Elements/artefactFree/',stripFileExtension(filenames{i}),'.mat'),'channelsinEpoch','reconstructedEpochs','segmentedTime', '-mat');
 
 
 end
