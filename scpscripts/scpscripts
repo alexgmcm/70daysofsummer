@@ -3,3 +3,6 @@ scp -r s1367329@sshgate.see.ed.ac.uk:/home/engbiome/ControlsMEG/* /home/alexgmcm
 scp -r s1367329@sshgate.see.ed.ac.uk:/home/engbiome/MEG_AD_Thesis/* /home/alexgmcm/data/MEG_AD_Thesis
 
 scp -r s1367329@sshgate.see.ed.ac.uk:/home/engbiome/ControlsMEG/different_format/* /home/alexgmcm/data/ControlsMEG/different_format
+
+
+scp -r s1367329@sshgate.see.ed.ac.uk:/home/engbiome/ControlsMEG/different_format/AL45C /home/alexgmcm/data/ControlsMEG/different_format/AL45C
