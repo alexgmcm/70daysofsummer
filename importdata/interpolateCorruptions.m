@@ -1,0 +1,1 @@
+%find values where there are corruptions (i.e. where the time vector isn't in a uniform step - or use corruptions.mat to find) and interpolate between neighbouring values to fill in the missing data
