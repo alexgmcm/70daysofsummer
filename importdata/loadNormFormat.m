@@ -6,7 +6,7 @@ load('corruptions.mat'); %load the corruption info in errors cell array
 dirData=dir(dataDir);
 filenames= {dirData(3:length(dirData)).name};
 
-for i=1:length(filenames)
+for i=222;%1:length(filenames)
 	if ~ismember(filenames{i},errors(:,1)) %returns 0 if file contains corruptions, 1 otherwise (not the negation ~)
 		%normal handling code
 		MEGData = loadMEGData(strcat(dataDir,filenames{i}),1,inf); %load the whole file
@@ -38,7 +38,7 @@ for i=1:length(filenames)
 
 	
 	end
-	save(strcat('/media/alexgmcm/Elements/completeData/normFormat/', stripFileExtension(filenames{i}),'.mat'), 'MEGData','-mat');
+	save(strcat('/media/alexgmcm/Elements/normFormat/', stripFileExtension(filenames{i}),'.mat'), 'MEGData','-mat');
 
 
 end
