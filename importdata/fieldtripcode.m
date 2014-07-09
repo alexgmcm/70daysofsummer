@@ -51,6 +51,9 @@ cfg.continuous = 'yes';
 % channel selection, cutoff and padding
 cfg.artfctdef.zvalue.channel    = 'MEG';
 cfg.artfctdef.zvalue.cutoff     = 60;
+if i ~= 1
+   cfg.artfctdef.zvalue.cutoff     = prevJumpCutoff;
+end
 cfg.artfctdef.zvalue.trlpadding = 0;
 cfg.artfctdef.zvalue.artpadding = 0;
 cfg.artfctdef.zvalue.fltpadding = 0;
@@ -64,6 +67,7 @@ cfg.artfctdef.zvalue.absdiff       = 'yes';
 % make the process interactive
 cfg.artfctdef.zvalue.interactive = 'yes';
 [cfg, artifact_jump] = ft_artifact_zvalue(cfg,data_ref);
+prevJumpCutoff=cfg.artfctdef.zvalue.cutoff;
 
 
 
@@ -76,6 +80,9 @@ cfg.artfctdef.zvalue.interactive = 'yes';
    % channel selection, cutoff and padding
    cfg.artfctdef.zvalue.channel     = 'MEG';
    cfg.artfctdef.zvalue.cutoff      = 30;
+   if i ~= 1
+   cfg.artfctdef.zvalue.cutoff     = prevEOGCutoff;
+end
    cfg.artfctdef.zvalue.trlpadding  = 0;
    cfg.artfctdef.zvalue.artpadding  = 0.1;
    cfg.artfctdef.zvalue.fltpadding  = 0;
@@ -91,7 +98,7 @@ cfg.artfctdef.zvalue.interactive = 'yes';
    cfg.artfctdef.zvalue.interactive = 'yes';
  
    [cfg, artifact_EOG] = ft_artifact_zvalue(cfg,data_ref);
-
+prevEOGCutoff=cfg.artfctdef.zvalue.cutoff;
 
 
 cfg=[]; 
@@ -101,6 +108,10 @@ cfg.artfctdef.jump.artifact = artifact_jump;
 data_no_artifacts = ft_rejectartifact(cfg,data_ref);
 
 saveDir='/media/alexgmcm/Elements/artefactFree/';
+saveDir2='/media/alexgmcm/Elements/artefactInfo/';
 
 save(strcat(saveDir,filename), 'data_no_artifacts','header','artifact_EOG','artifact_jump','-mat');
+save(strcat(saveDir2,filename), 'artifact_EOG','artifact_jump','-mat');
+
+
 end
