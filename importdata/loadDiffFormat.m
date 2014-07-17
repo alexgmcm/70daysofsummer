@@ -6,17 +6,24 @@ function [MEGData] = loadDiffFormat(directoryName);
 
 %get length of signal (i.e. number of lines)
 %use timevec to get numlines
-	numFormat='%03.0f';
+	%numFormat='%03.0f';
 	numFormat1='%03.0f';
 	%for some reason the directory 58 in different_format has a slightly different format to the other subdirs...
-	if strcmp(directoryName,'58')
+	%if strcmp(directoryName,'58')
 		numFormat='%3.0f';
+	%end
+
+
+
+	dataDir='/media/alexgmcm/Elements/mci/';
+	[status, result] = system( ['wc -l ', strcat(dataDir,directoryName, '/T/',directoryName,'_A',num2str(0,numFormat),'_0.dat')] )
+	if status~=0
+		pause(1);
+		numFormat='%03.0f';
+		[status, result] = system( ['wc -l ', strcat(dataDir,directoryName, '/T/',directoryName,'_A',num2str(0,numFormat),'_0.dat')] )
+		pause(1);
+		[status, result] = system( ['wc -l ', strcat(dataDir,directoryName, '/T/',directoryName,'_A',num2str(0,numFormat),'_0.dat')] )
 	end
-
-
-
-	dataDir='~/data/ControlsMEG/different_format/';
-	[status, result] = system( ['wc -l ', strcat(dataDir,directoryName, '/T/',directoryName,'_A',num2str(0,numFormat),'_0.dat')] );
 	numlinesstr = regexp(result, '(^[0-9]+)?', 'match');
 	numlines = str2num( numlinesstr{1,1} );
 
@@ -35,9 +42,19 @@ function [MEGData] = loadDiffFormat(directoryName);
 
 
 			if i==1
-				filename =strcat(dataDir,directoryName,'/T/',directoryName,'_A',num2str(i-1,numFormat),'_0.dat');
+				%try
+					filename =strcat(dataDir,directoryName,'/T/',directoryName,'_A',num2str(i-1,numFormat),'_0.dat');
+				%catch err
+				%	numFormat='%03.0f';
+				%	filename =strcat(dataDir,directoryName,'/T/',directoryName,'_A',num2str(i-1,numFormat),'_0.dat');
+				%end
 			else
-				filename=strcat(dataDir,directoryName,'/A',num2str(i-1,numFormat1),'/',directoryName,'_A',num2str(i-1,numFormat),'_0.dat');
+				%try
+					filename=strcat(dataDir,directoryName,'/A',num2str(i-1,numFormat1),'/',directoryName,'_A',num2str(i-1,numFormat),'_0.dat');
+				%catch err
+				%	numFormat='%03.0f';
+				%	filename=strcat(dataDir,directoryName,'/A',num2str(i-1,numFormat1),'/',directoryName,'_A',num2str(i-1,numFormat),'_0.dat');
+				%end
 			end
 
 

@@ -8,14 +8,14 @@
 % CHANNELS_POSTERIOR = [38:42 58:63 81:85 101:106 119:124 137:142];
 % CHANNELS_RIGHT_LAT = [43:47 64:68 86:91 107:112 125:130 143:148];
 
-dataDir='/media/alexgmcm/Elements/relativePowersPerChan/';
+dataDir='/media/alexgmcm/Elements/mciRelativePowersPerChan/';
 dirData=dir(dataDir);
 filenames= {dirData(3:length(dirData)).name};
-load('useHealthySubjects.mat'); %loads metadata in healthySubjects 220x3 cell array
+load('mcimetadata.mat'); %loads metadata in healthySubjects 220x3 cell array
 %the index for healthysubjects is the same as that for filenames so should be easy to construct feature vector in one loop
 %feature vector: filename age isMale centralpowers anteriorpowers left_latpowers posteriorpowers right_latpowers
 %powers go in order: deltarp thetarp alpharp beta1rp beta2rp gammarp
-featureVector = [healthySubjects cell(220, 30)];
+featureVector = [mci cell(size(mci,1), 30)];
 
 for i=1:length(filenames)
 
@@ -34,8 +34,8 @@ for i=1:length(filenames)
 	right_lat=mean([ relativePowersPerChan(43:47,:); relativePowersPerChan(64:68,:); relativePowersPerChan(86:91,:); ...
 	 relativePowersPerChan(107:112,:); relativePowersPerChan(125:130,:); relativePowersPerChan(143:148,:)],1);
 
-	featureVector(i, 4:33) = num2cell([central anterior left_lat posterior right_lat]);
+	featureVector(i, 5:34) = num2cell([central anterior left_lat posterior right_lat]);
 
 end
 
-save('featureVector.mat','featureVector', '-mat');
+save('mciFeatureVector.mat','featureVector', '-mat');

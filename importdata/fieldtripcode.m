@@ -1,13 +1,14 @@
 
 addpath('/home/alexgmcm/Documents/MATLAB/FieldTrip/fieldtrip-20140518');
 ft_defaults;
-dataDir='/media/alexgmcm/Elements/completeData/';
+dataDir='/media/alexgmcm/Elements/mciCompleteData/';
 dirData=dir(dataDir);
 filenames= {dirData(3:length(dirData)).name};
 
 
 for i=1:length(filenames)
-filename=filenames{i}
+   strcat('Progress:',num2str(i/length(filenames)*100))
+filename=filenames{i};
 loadFieldTrip(filename);
 [header, data_ref] = loadFieldTrip(filename);
 
@@ -107,8 +108,8 @@ cfg.artfctdef.eog.artifact = artifact_EOG; %
 cfg.artfctdef.jump.artifact = artifact_jump;
 data_no_artifacts = ft_rejectartifact(cfg,data_ref);
 
-saveDir='/media/alexgmcm/Elements/artefactFree/';
-saveDir2='/media/alexgmcm/Elements/artefactInfo/';
+saveDir='/media/alexgmcm/Elements/mciArtefactFree/';
+saveDir2='/media/alexgmcm/Elements/mciArtefactInfo/';
 
 save(strcat(saveDir,filename), 'data_no_artifacts','header','artifact_EOG','artifact_jump','-mat');
 save(strcat(saveDir2,filename), 'artifact_EOG','artifact_jump','-mat');

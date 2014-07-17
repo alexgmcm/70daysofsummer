@@ -1,8 +1,10 @@
-dataDir='~/data/ControlsMEG/different_format/';
+dataDir='/media/alexgmcm/Elements/mci/';
 dirData=dir(dataDir);
 filenames= {dirData(3:length(dirData)).name};
 
-for i=1:length(filenames)
+for i=19:length(filenames)
+	(i/length(filenames))*100
 	MEGData = loadDiffFormat(filenames{i});
-	save(strcat('/media/alexgmcm/Elements/completeData/', filenames{i},'.mat'), 'MEGData','-mat');
+	MEGData=MEGData./1e5;
+	save(strcat('/media/alexgmcm/Elements/mciCompleteData/', filenames{i},'.mat'), 'MEGData','-mat');
 end

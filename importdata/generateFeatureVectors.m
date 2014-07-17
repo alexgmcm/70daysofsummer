@@ -1,7 +1,7 @@
-dataDir='/media/alexgmcm/Elements/artefactFree/';
+dataDir='/media/alexgmcm/Elements/mciArtefactFree/';
 dirData=dir(dataDir);
 filenames= {dirData(3:length(dirData)).name};
-load('useHealthySubjects.mat'); %loads metadata in healthySubjects 220x3 cell array
+%load('alzmetadata.mat'); %loads metadata in healthySubjects 220x3 cell array
 %the index for healthysubjects is the same as that for filenames so should be easy to construct feature vector in one loop
 %feature vector: filename age isMale deltarp thetarp alpharp beta1rp beta2rp gammarp
 %use welch to get peridogram due to less noise, but what to use for size of overlapping windows?
@@ -9,7 +9,7 @@ load('useHealthySubjects.mat'); %loads metadata in healthySubjects 220x3 cell ar
 
 %get periodogram via welch for each epoch in channel, average them across the epochs for each channel.
 
-saveDir='/media/alexgmcm/Elements/relativePowersPerChan/';
+saveDir='/media/alexgmcm/Elements/mciRelativePowersPerChan/';
 
 for i=1:length(filenames)
 (i/length(filenames))*100
