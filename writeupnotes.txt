@@ -1,0 +1,57 @@
+“It is a capital mistake to theorize before one has data. Insensibly one begins to twist facts to suit theories, instead of theories to suit facts.”
+
+
+― Arthur Conan Doyle, Sherlock Holmes
+
+
+
+
+
+
+
+correlation plot
+found correct correlatons (the older it predicted than normal, the worse the cog scores)
+but correlations v.weak alzrsquared=0.0146, mcirsquared=0.0168, totrsquared=0.0060
+as it predicted most patients as younger than their actual age it is not as if the healthy model predicted those with cognitive impairments as older than their actual age with the discrepancy dependent upon the severity of the condition, as we hypothesised and given the weakness of the correlation it makes it doesn't seem as though the model can be used to predict the severity of the disease (as measured by the MMSE score)
+y=p(1)x + p(2);
+alzp=[-0.0198,17.6621];
+mcip=[-0.0178,25.5127];
+totp=[-0.0200,20.2174];
+
+
+classification
+RUSBoost is better for imbalanced classes
+boosted algorithms deal very badly with label noise
+http://en.wikipedia.org/wiki/Boosting_(meta-algorithm)#Criticism
+
+ Value    Count   Percent
+  Healthy      220     79.14%
+      Alz       39     14.03%
+      MCI       19      6.83%
+
+      Confusion matrix
+   			   pred vals
+    	 	        H 	  alz 	MCI 
+		        H  198     0    22
+actual vals 	Alz 22     6    11
+  				MCI   9     2     8
+
+
+L =
+
+    0.2374
+
+
+full feature set
+
+ans =
+
+   100    52    68
+     7    24     8
+     6     5     8
+
+
+
+    L =
+
+    0.5252

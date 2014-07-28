@@ -8,7 +8,7 @@ age=cell2mat(featureVector(:,2));
 features = [ones(size(features,1),1) features];
 %calculate mean squared error and rmse, check residual values first... they might be studentized
 
-[RMSE,MSE,coeffs]=kfoldcvLinearRegression(age,features,10);
+[RMSE,MSE,coeffs]=kfoldcvLinearRegression(age,features);
 %tests for assumptions - http://people.duke.edu/~rnau/testing.htm
 %linearity test, appears to pass
  plot(age(indices==1),preds(:,1),'bx');
@@ -34,6 +34,12 @@ quadreducedFeatures=[reducedFeatures(:,1) reducedFeatures(:,2:end) reducedFeatur
 
 weights = repmat((RMSE.^(-1)),size(coeffs,1),1);
 wavgcoeffs=sum(coeffs.*weights,2)./sum(weights,2);
+
+preds=sum(repmat(wavgcoeffs',size(features,1),1).*features,2);
+
+residuals=age-preds;
+
+
 
 alzFV = load('alzFeatureVector.mat');
 alzFeatureVector=alzFV.featureVector;
@@ -104,15 +110,89 @@ print('mcibootstrapMSEplot.eps','-depsc2');
 plot(1:1500,cell2mat(meanmciMSE),'bx')
 
 
+hold off;
 
+plot((-1.*alzResiduals),[alzFeatureVector{:,4}],'r.');
+hold on;
+plot((-1.*mciResiduals),[mciFeatureVector{:,4}],'b.');
+alzp=polyfit((-1.*alzResiduals),[alzFeatureVector{:,4}]',1);
+alzfit=polyval(alzp,(-1.*alzResiduals));
+alzfit2=polyval(alzp,-60:20);
+alzcogresiduals=[alzFeatureVector{:,4}]'-alzfit;
+alzssresid=sum(alzcogresiduals.^2)
+alzsstotal=(length([alzFeatureVector{:,4}])-1)*var([alzFeatureVector{:,4}]);
+alzrsq=1-(alzssresid/alzsstotal);
+plot(-60:20,alzfit2,'r-');
 
-
-
-
-
+mcip=polyfit((-1.*mciResiduals),[mciFeatureVector{:,4}]',1);
+mcifit=polyval(mcip,(-1.*mciResiduals));
+mcifit2=polyval(mcip,-60:20);
+mcicogresiduals=[mciFeatureVector{:,4}]'-mcifit;
+mcissresid=sum(mcicogresiduals.^2)
+mcisstotal=(length([mciFeatureVector{:,4}])-1)*var([mciFeatureVector{:,4}]);
+mcirsq=1-(mcissresid/mcisstotal);
+plot(-60:20,mcifit2,'b-');
+hold off;
+hold on;
+ytot=[alzFeatureVector{:,4} mciFeatureVector{:,4}]';
+xtot=[(-1*alzResiduals);(-1.*mciResiduals)];
+totp=polyfit(xtot,ytot,1);
+totfit=polyval(totp,xtot);
+totfit2=polyval(totp,-60:20);
+totcogresiduals=ytot-totfit;
+totssresid=sum(totcogresiduals.^2)
+totsstotal=(length(ytot)-1)*var(ytot);
+totrsq=1-(totssresid/totsstotal);
+plot(-60:20,totfit2,'k-');
+hold off;
+ylabel('MMSE score');
+xlabel('Predicted Age - Actual Age');
+legend('Alzheimers','MCI','Location','SouthWest');
+print('cogscorecorrel.eps','-depsc2');
 
 %alzRMSE=sqrt(alzMSE);
 %plot(alzRMSE);
+
+%Classification
+%generate class labels
+hold off;
+[Y{1:size(featureVector,1)}]=deal('Healthy');
+[Y{size(featureVector,1)+1:size(featureVector,1)+size(alzFeatureVector,1)}]=deal('Alz');
+[Y{size(featureVector,1)+size(alzFeatureVector,1)+1:size(featureVector,1)+size(alzFeatureVector,1)+size(mciFeatureVector,1)}]=deal('MCI');
+Y=Y';
+X=[residuals;alzResiduals;mciResiduals];
+tic
+cv = fitensemble(X,Y,'RUSBoost',1500,'Tree','kfold',10,'nprint',100,'LearnRate',0.1);
+toc
+plot(kfoldLoss(cv,'mode','cumulative'),'r-');
+
+xlabel('Number of trees');
+ylabel('Classification error');
+print('resid1500treesCVerror.eps','-depsc2');
+[Yfit,Sfit] = kfoldPredict(cv); % 
+confusionmat(cv.Y,Yfit,'order',{'Healthy','Alz','MCI'})
+
+L = kfoldLoss(cv)
+
+hold off;
+X2=[features(:,2:end);alzFeatures(:,2:end);mciFeatures(:,2:end)];
+tic
+cv2 = fitensemble(X2,Y,'RUSBoost',1500,'Tree','kfold',10,'nprint',100,'LearnRate',0.1);
+toc
+plot(kfoldLoss(cv2,'mode','cumulative'),'r-');
+
+xlabel('Number of trees');
+ylabel('Classification error');
+print('full1500treesCVerror.eps','-depsc2');
+[Yfit2,Sfit2] = kfoldPredict(cv2); % 
+confusionmat(cv2.Y,Yfit2,'order',{'Healthy','Alz','MCI'})
+
+
+
+
+
+
+
 
 
 

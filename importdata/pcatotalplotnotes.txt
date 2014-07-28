@@ -1,0 +1,5 @@
+pcatotalplot notes
+red=alz
+yellow=mci
+green=healthy
+2 components explain 86.51% of variance

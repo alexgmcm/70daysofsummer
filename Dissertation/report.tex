@@ -1,0 +1,72 @@
+\documentclass[12pt,oneside,abbrevs,dtc,mscres,neuro,notimes,logo]{styles/infthesis}
+
+% Packages
+\usepackage{graphicx}
+\usepackage{abbrevs}
+\usepackage{acronym}
+\usepackage{minted}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{cite} 
+\usepackage{gensymb}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{scalefnt}
+\usepackage{subfig}
+\usepackage{tabularx}
+%\usepackage{subcaption}
+\usepackage{array}
+%\usepackage{pgffor,pgf}
+\usepackage{psfrag}
+\usepgflibrary{plothandlers}
+\usetikzlibrary{plotmarks}
+\pgfplotsset{compat=newest}
+
+
+\mathtoolsset{showonlyrefs=false}
+
+\renewcommand\theFancyVerbLine{\normalsize\arabic{FancyVerbLine}}
+
+% Project Details
+\title{Modulation of synaptic transmission in MSO neurons by Nitric Oxide}
+\author{Danilo Orlando}
+\submityear{2014}
+\date{\today}
+
+
+%\input{sections/misc/acronyms}
+\input{sections/misc/abstract}
+
+% Extra Package Commands
+
+\begin{document}
+  \begin{preliminary}
+    % Title Page
+    \shieldtype{1}
+    \maketitle
+
+    % Preamble
+    \input{sections/misc/acknowledgements}
+    \standarddeclaration
+    \input{sections/misc/dedication}
+    \tableofcontents
+    \listoffigures
+  \end{preliminary}
+
+  % Chapters
+  \input{sections/intro}
+  \input{sections/background}
+  \input{sections/minisAnalysis}
+  \input{sections/conclusion}
+
+  % Appendix
+  %\appendix
+
+  %\input{sections/appendix/program}
+
+  % Bibliography
+  \bibliography{refs/bibliography}{}
+  \bibliographystyle{apalike}
+\end{document}
