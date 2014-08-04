@@ -1,4 +1,4 @@
-\documentclass[12pt,oneside,abbrevs,dtc,mscres,neuro,notimes,logo]{styles/infthesis}
+\documentclass[12pt,oneside,abbrevs,dtc,mscres,neuro,notimes,logo,a4paper]{styles/infthesis}
 
 % Packages
 \usepackage{graphicx}
@@ -23,15 +23,15 @@
 \usepgflibrary{plothandlers}
 \usetikzlibrary{plotmarks}
 \pgfplotsset{compat=newest}
-
+\graphicspath{{images/}}
 
 \mathtoolsset{showonlyrefs=false}
 
 \renewcommand\theFancyVerbLine{\normalsize\arabic{FancyVerbLine}}
 
 % Project Details
-\title{Modulation of synaptic transmission in MSO neurons by Nitric Oxide}
-\author{Danilo Orlando}
+\title{Characterising the effect of normal brain ageing on MEG recordings: a diagnostic tool?}
+\author{Alexander McMurray}
 \submityear{2014}
 \date{\today}
 
@@ -58,7 +58,7 @@
   % Chapters
   \input{sections/intro}
   \input{sections/background}
-  \input{sections/minisAnalysis}
+  \input{sections/methodology}
   \input{sections/conclusion}
 
   % Appendix

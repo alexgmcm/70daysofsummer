@@ -4,25 +4,56 @@
 
 \section{Motivation}
 
+The twentieth and twenty-first centuries have seen a rapid increase in life expectancy but the consequent growth of the elderly population has led to an increasing prevalence of dementia.\cite{Hebert2014} Therefore the accurate diagnosis of Alzheimer's Disease (a leading cause of dementia) is an increasingly important problem.
 
-\section{Objectives}
+Alzheimer's disease can be confirmed by post-mortem analysis of the brain for characteristic lesions but diagnosis of living patients depends upon neuroimaging and neuropsychological methods. Unfortunately incorrect diagnosis is common ranging from 10\% to 30\% and it is more difficult to detect earlier in the disease as the symptoms are less severe but this is also when experimental treatments are perhaps more likely to be successful. It has been noted that the lack of understanding of the normal brain ageing process remains a major challenge to accurate diagnosis but that Magnetoencephalography (MEG) remains a promising area of investigation for clinical diagnosis.\cite{Fernandez2013}
 
-The main objectives of the project were:
+The development of reliable and objective diagnostic techniques would be invaluable to improve the selection of suitable candidates for clinical trials and thus improve the chance of discovering successful early stage treatments. An analogy can be found in cancer treatment - if clinical trials were only carried out on late Stage IV cancer patients then it would be concluded that we had very few, if any, effective treatments so the correct identification of early stage patients is vital to curing the disease. Unsurprisingly, the early detection of Alzheimer's disease has become a topic of intense focus in recent years. \cite{Nestor2004}
+
+
+
+\section{Hypothesis and Objectives}
+
+The hypothesis was that Alzheimer's disease effects the normal course of brain aging, and thus a model which predicted the age of a subject from the MEG recordings which was based on healthy subject would fail when applied to Alzheimer's and MCI patients. Due to the damage that Alzheimer's causes to synapses it would seem logical to believe that the healthy model would over-estimate the true age of the patient due to the accelerated damage to the brain caused by Alzheimer's Disease. It is also assumed that the magnitude of error the healthy model had for a given patient would be proportional to the severity of their disease which can be measured by their scores on the Mini Mental State Examination (MMSE), a standard cognitive test used with Alzheimer's and Mild Congnitive Impairment (MCI) patients. The difference between Alzheimer's Disease and MCI will be discussed in the background section.
+
+The model to be used is a multiple linear regression model with the age as the dependent variable and the relative powers of the different spectral bands averaged over different brain regions as the explanatory variables. The failure of the model can thus be quantified using the Root Mean Squared Error (RMSE) value, which can be estimated via bootstrap samples for the diseased patients and via cross-validation when obtaining the model from the healthy subjects. The classifier to be used will be a boosted decision trees algorithm that is robust to class imbalance (RUSBOOST). This will be explained in the section describing the methodology.
+
+To summarise, the main objectives of the project were:
 
 \begin{itemize}
-\item TRY
+\item Create a multiple linear regression model relating the relative powers of the spectral bands in the MEG recordings to the age of the subject, using healthy subjects
+\item See if the failure of this model in diseased patients correlates with the severity of their condition, as measured by the RMSE value and MMSE score respectively
+\item Attempt to distinguish between healthy and diseased subjects using a classifier
 \end{itemize}
 
+\section{Results Achieved}
 
+Initially the results seemed optimistic as the RMSE values for the healthy, MCI and Alzheimer's patients showed that the model was less accurate when applied to diseased patients as hypothesised and that the magnitude of failure was worse for the more severely affected Alzheimer's group than for those with MCI, which was also as expected. However, the RMSE value of the model on healthy patients was still relatively high with the estimates having a mean of 14.86 years and a standard deviation of 2.68 years (note that this is the standard deviation of the sampling distribution and thus is equivalent to the standard error of the RMSE statistic).
+
+However, subsequent projections of the data were worrying as the classes did not appear to be separable, neither by age within a class nor between classes as a whole. This implied that perhaps the relative powers would not allow us to distinguish between the healthy subjects and diseased patients, and thus the model based on them would also lack such discriminative ability. 
+
+This was corroborated by the classifier results which were no better than a 'dumb' classifier which simply predicts all subjects to be healthy irrespective of the data. However, given that the data processing pipeline from raw MEG signal to feature vector is very long and involves many variables such as how to perform the artefact detection, filtering, whether to include noisier signals etc. this study does not prove that the relative powers are unable to distinguish between the disease states.
+
+It is possible that careful tweaking of the pipeline would result in success. However, as a preliminary study it demonstrates that such a task is likely to be difficult.
+
+
+
+\newpage
 
 \section{Outline}
-The next chapter reviews 
 
-\textbf{Chapter 3} reviews 
+The document will be structured as follows:\\
+\begin{itemize}
 
-\textbf{Chapter 4} describes 
+\item \textbf{Background} - Discussion of the literature related to the topic and past work. Includes a brief introduction to Magnetoencephalography and Alzheimer's disease covering the relevant aspects of those fields.\\
 
+\item \textbf{Methodology and Results} - Describes the work undertaken and the results obtained. Explains the processes of data cleaning, artefact rejection, feature extraction, data visualisation and attempted classification.\\
 
+\item \textbf{Evaluation} - Interpreting and evaluating the results.\\
+
+\item \textbf{Conclusion} - Final statements about the work and suggestions for future work.\\
+
+\end{itemize}
 
 
 
