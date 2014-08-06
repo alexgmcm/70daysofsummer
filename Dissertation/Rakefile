@@ -8,7 +8,7 @@ TEX_EXEC = "pdflatex"
 # Semi-Configuration
 PDF_NAME = "#{NAME}.pdf"
 TEX_NAME = "#{NAME}.tex"
-DEFAULT_ARGS = "-shell-escape -interaction=nonstopmode"
+DEFAULT_ARGS = "-shell-escape -interaction=errorstopmode"
 # -papersize=a4"
 
 # Cleaning FileLists
@@ -20,7 +20,7 @@ task :default => [:build, :clean]
 desc "Build the document"
 task :build do
     puts "Building the PDF... [#{TEX_NAME} => #{PDF_NAME}]"
-    latex DEFAULT_ARGS, TEX_NAME
+    print latex DEFAULT_ARGS, TEX_NAME
     `bibtex #{NAME}`
     latex DEFAULT_ARGS, TEX_NAME
     latex DEFAULT_ARGS, TEX_NAME

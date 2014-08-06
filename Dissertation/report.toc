@@ -9,5 +9,10 @@
 \contentsline {section}{\numberline {2.3}Previous work}{14}
 \contentsline {chapter}{\numberline {3}Methodology}{15}
 \contentsline {section}{\numberline {3.1}Data cleaning}{15}
-\contentsline {chapter}{\numberline {4}Conclusion and future works}{17}
-\contentsline {chapter}{Bibliography}{18}
+\contentsline {section}{\numberline {3.2}Artefact Rejection}{17}
+\contentsline {section}{\numberline {3.3}Filtering and Feature Extraction}{18}
+\contentsline {section}{\numberline {3.4}Model Fitting}{19}
+\contentsline {section}{\numberline {3.5}Data visualisation}{21}
+\contentsline {subsection}{\numberline {3.5.1}t-Distributed Stochastic Neighbour Embedding}{21}
+\contentsline {chapter}{\numberline {4}Conclusion and future works}{23}
+\contentsline {chapter}{Bibliography}{24}

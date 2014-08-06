@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.2)  4 AUG 2014 16:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.2)  6 AUG 2014 19:00
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**report.tex
+**report
 (./report.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 2 languages loaded.
@@ -78,161 +78,7 @@ LaTeX Warning: You have requested package `styles/logos/eushield',
 
 Package: eushield 2006/08/28\ v1.1\ Commands for including the EU shield graphi
 c
-)
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.243 ...adings,openright,oneside,12pt,timesfonts}
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no p in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no , in font nullfont!
-! Undefined control sequence.
-<argument> ...right,oneside,12pt,timesfonts,\@nil 
-                                                  ,\@nil 
-l.243 ...adings,openright,oneside,12pt,timesfonts}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-Missing character: There is no , in font nullfont!
-! Undefined control sequence.
-<argument> ...neside,12pt,timesfonts,\@nil ,\@nil 
-                                                  
-l.243 ...adings,openright,oneside,12pt,timesfonts}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\@forloop ...fx #4\@nnil \else #5\@iforloop #3\@@ 
-                                                  #4{#5}\fi \fi 
-l.243 ...adings,openright,oneside,12pt,timesfonts}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-Missing character: There is no p in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no d in font nullfont!
-! Argument of \@researchdegree has an extra }.
-<inserted text> 
-                \par 
-l.243 ...adings,openright,oneside,12pt,timesfonts}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@researchdegree was complete.
-<to be read again> 
-                   \par 
-l.243 ...adings,openright,oneside,12pt,timesfonts}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 243--243
-[] 
- []
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+) (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
@@ -249,7 +95,7 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen110
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+)
 (/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
@@ -1022,7 +868,7 @@ ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.9}).
 
-<styles/logos/eushield-noback.pdf, id=10, 369.38pt x 373.395pt>
+<styles/logos/eushield-noback.pdf, id=4, 369.38pt x 373.395pt>
 File: styles/logos/eushield-noback.pdf Graphic file (type pdf)
 
 <use styles/logos/eushield-noback.pdf>
@@ -1030,11 +876,13 @@ Package pdftex.def Info: styles/logos/eushield-noback.pdf used on input line 48
 .
 (pdftex.def)             Requested size: 369.37909pt x 373.39409pt.
  [1
+Non-PDF special ignored!
 
- <./styles/logos/eushield-noback.pdf>] [1
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./styles/logos/eushield-no
+back.pdf>] [1
 
-] (./sections/misc/acknowledgements.tex [2]) [3]
-(./sections/misc/dedication.tex) [4] (./report.toc)
+] (./sections/misc/acknowledgements.tex
+[2]) [3] (./sections/misc/dedication.tex) [4] (./report.toc)
 \tf@toc=\write8
 \openout8 = `report.toc'.
 
@@ -1043,6 +891,9 @@ Package pdftex.def Info: styles/logos/eushield-noback.pdf used on input line 48
 ] (./report.lof
 
 LaTeX Warning: Citation `Burns2009' on page 6 undefined on input line 3.
+
+
+LaTeX Warning: Citation `Escudero2013' on page 6 undefined on input line 7.
 
 )
 \tf@lof=\write9
@@ -1071,40 +922,40 @@ LaTeX Warning: Citation `Nestor2004' on page 7 undefined on input line 11.
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 24.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 27.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
  [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
-
- []
-
-
-Overfull \hbox (22.18977pt too wide) in paragraph at lines 48--49
-\OT1/cmr/m/n/12 work. In-cludes a brief in-tro-duc-tion to Mag-ne-toen-cephalog
--ra-phy and Alzheimer's
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+Overfull \hbox (22.18977pt too wide) in paragraph at lines 51--52
+\OT1/cmr/m/n/12 work. In-cludes a brief in-tro-duc-tion to Mag-ne-toen-cephalog
+-ra-phy and Alzheimer's
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
@@ -1131,7 +982,7 @@ LaTeX Warning: Citation `Burns2009' on page 11 undefined on input line 7.
 
 LaTeX Warning: Citation `Burns2009' on page 12 undefined on input line 9.
 
-<images/MMSEgraph.jpg, id=55, 1284.8pt x 999.735pt>
+<images/MMSEgraph.jpg, id=53, 1284.8pt x 999.735pt>
 File: images/MMSEgraph.jpg Graphic file (type jpg)
  <use images/MMSEgraph.jpg>
 Package pdftex.def Info: images/MMSEgraph.jpg used on input line 14.
@@ -1181,15 +1032,98 @@ Chapter 3.
 
 LaTeX Warning: Citation `Smith1999' on page 16 undefined on input line 13.
 
-) (./sections/conclusion.tex [16]
+
+LaTeX Warning: Citation `Oostenveld2011' on page 16 undefined on input line 14.
+
+
+[16] <images/ftartefactgui.png, id=71, 900.36375pt x 426.59375pt>
+File: images/ftartefactgui.png Graphic file (type png)
+
+<use images/ftartefactgui.png>
+Package pdftex.def Info: images/ftartefactgui.png used on input line 35.
+(pdftex.def)             Requested size: 412.56497pt x 195.4739pt.
+ [17 <./images/ftartefactgui.png>]
+
+LaTeX Warning: Citation `Gomez2013' on page 18 undefined on input line 47.
+
+
+LaTeX Warning: Citation `Welch1967' on page 18 undefined on input line 47.
+
+<images/postfilterexamplespectra.pdf, id=77, 494.84875pt x 391.4625pt>
+File: images/postfilterexamplespectra.pdf Graphic file (type pdf)
+
+<use images/postfilterexamplespectra.pdf>
+Package pdftex.def Info: images/postfilterexamplespectra.pdf used on input line
+ 52.
+(pdftex.def)             Requested size: 330.05322pt x 261.09581pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `Gomez2013' on page 18 undefined on input line 57.
+
+
+LaTeX Warning: Citation `Escudero2013' on page 18 undefined on input line 59.
+
+[18] <images/sensorareas2.png, id=83, 619.31375pt x 485.815pt>
+File: images/sensorareas2.png Graphic file (type png)
+
+<use images/sensorareas2.png>
+Package pdftex.def Info: images/sensorareas2.png used on input line 74.
+(pdftex.def)             Requested size: 330.05322pt x 258.91882pt.
+
+
+LaTeX Warning: Citation `Escudero2013' on page 19 undefined on input line 75.
+
+
+LaTeX Warning: Citation `Escudero2013' on page 19 undefined on input line 75.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `Gomez2013' on page 19 undefined on input line 79.
+
+[19 <./images/postfilterexamplespectra.pdf>] [20 <./images/sensorareas2.png>]
+
+LaTeX Warning: Citation `Witten2011' on page 21 undefined on input line 96.
+
+
+LaTeX Warning: Citation `Witten2011' on page 21 undefined on input line 96.
+
+
+LaTeX Warning: Reference `fig:cogscorecorrel' on page 21 undefined on input lin
+e 115.
+
+
+Overfull \hbox (2.09912pt too wide) in paragraph at lines 115--116
+\OT1/cmr/m/n/12 the sub-jects MMSE scores in Fig-ure [] (MMSE data only avail-a
+ble for Alzheimer's
+ []
+
+<images/cogscorecorrel.pdf, id=95, 489.83pt x 393.47pt>
+File: images/cogscorecorrel.pdf Graphic file (type pdf)
+
+<use images/cogscorecorrel.pdf>
+Package pdftex.def Info: images/cogscorecorrel.pdf used on input line 119.
+(pdftex.def)             Requested size: 412.56497pt x 331.41312pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `Maaten2008' on page 21 undefined on input line 134.
+
+) (./sections/conclusion.tex [21] [22 <./images/cogscorecorrel.pdf>]
 Chapter 4.
-) (./report.bbl [17
+) (./report.bbl [23
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [18
+) [24
 
 ] (./report.aux)
 
@@ -1197,24 +1131,29 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 22126 strings out of 495028
- 496834 string characters out of 6181498
- 661721 words of memory out of 5000000
- 24812 multiletter control sequences out of 15000+600000
- 10688 words of font info for 38 fonts, out of 8000000 for 9000
+ 22163 strings out of 495028
+ 497686 string characters out of 6181498
+ 661731 words of memory out of 5000000
+ 24845 multiletter control sequences out of 15000+600000
+ 10995 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,6n,81p,943b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,9n,81p,1090b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (20 pages, 355982 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+i12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pf
+b>
+Output written on report.pdf (25 pages, 739752 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 156 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

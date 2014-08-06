@@ -3,10 +3,11 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: report.aux
 The style file: apalike.bst
 Database file #1: refs/bibliography.bib
+Warning--I didn't find a database entry for "Burns2009"
+Warning--I didn't find a database entry for "Escudero2013"
 Warning--I didn't find a database entry for "Hebert2014"
 Warning--I didn't find a database entry for "Fernandez2013"
 Warning--I didn't find a database entry for "Nestor2004"
-Warning--I didn't find a database entry for "Burns2009"
 Warning--I didn't find a database entry for "McCann2004"
 Warning--I didn't find a database entry for "Stewart2002"
 Warning--I didn't find a database entry for "Hari2012"
@@ -14,13 +15,16 @@ Warning--I didn't find a database entry for "Internationale2007"
 Warning--I didn't find a database entry for "Zani2002"
 Warning--I didn't find a database entry for "Gross2013"
 Warning--I didn't find a database entry for "Williams2010"
-Warning--I didn't find a database entry for "Escudero2013"
 Warning--I didn't find a database entry for "Fernandez2012"
 Warning--I didn't find a database entry for "Gomez2013"
 Warning--I didn't find a database entry for "Smith1999"
+Warning--I didn't find a database entry for "Oostenveld2011"
+Warning--I didn't find a database entry for "Welch1967"
+Warning--I didn't find a database entry for "Witten2011"
+Warning--I didn't find a database entry for "Maaten2008"
 You've used 0 entries,
             1935 wiz_defined-function locations,
-            501 strings with 4003 characters,
+            509 strings with 4089 characters,
 and the built_in function-call counts, 17 in all, are:
 = -- 0
 > -- 0
@@ -59,4 +63,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 2
-(There were 15 warnings)
+(There were 19 warnings)

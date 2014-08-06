@@ -239,8 +239,8 @@ Computer Science}}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
 
 %% Set default options and process the ones we were given.
-\ExecuteOptions{phd,centerchapter,romanprepages,%
-    sansheadings,openright,oneside,12pt,timesfonts} 
+%\ExecuteOptions{phd,centerchapter,romanprepages,%
+ %   sansheadings,openright,oneside,12pt,timesfonts} 
 \ProcessOptions
 
 %%

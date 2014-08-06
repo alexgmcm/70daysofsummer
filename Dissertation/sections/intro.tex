@@ -14,6 +14,9 @@ The development of reliable and objective diagnostic techniques would be invalua
 
 \section{Hypothesis and Objectives}
 
+\begin{center}\textit{``It is a capital mistake to theorise before one has data. Insensibly one begins to twist facts to suit theories, instead of theories to suit facts.''}\\ Arthur Conan Doyle, The Adventures of Sherlock Holmes (1892)
+\end{center}
+
 The hypothesis was that Alzheimer's disease effects the normal course of brain aging, and thus a model which predicted the age of a subject from the MEG recordings which was based on healthy subject would fail when applied to Alzheimer's and MCI patients. Due to the damage that Alzheimer's causes to synapses it would seem logical to believe that the healthy model would over-estimate the true age of the patient due to the accelerated damage to the brain caused by Alzheimer's Disease. It is also assumed that the magnitude of error the healthy model had for a given patient would be proportional to the severity of their disease which can be measured by their scores on the Mini Mental State Examination (MMSE), a standard cognitive test used with Alzheimer's and Mild Congnitive Impairment (MCI) patients. The difference between Alzheimer's Disease and MCI will be discussed in the background section.
 
 The model to be used is a multiple linear regression model with the age as the dependent variable and the relative powers of the different spectral bands averaged over different brain regions as the explanatory variables. The failure of the model can thus be quantified using the Root Mean Squared Error (RMSE) value, which can be estimated via bootstrap samples for the diseased patients and via cross-validation when obtaining the model from the healthy subjects. The classifier to be used will be a boosted decision trees algorithm that is robust to class imbalance (RUSBOOST). This will be explained in the section describing the methodology.

@@ -2,4 +2,8 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces The progression of Alzheimer's Disease and the associated MMSE scores.\cite {Burns2009}\relax }}{12}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The artefact rejection GUI from FieldTrip.\relax }}{17}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces An example PSD taken from the data. Notice the sharp decline in power at 1.5 and 40 Hz due to the bandpass filter.\relax }}{19}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The division of the MEG channels into regions: Anterior (cyan), Central (red), Left Lateral (yellow), Right Lateral (green) and Posterior (blue) \cite {Escudero2013}\relax }}{20}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces The MMSE score plotted against the residuals of the model, the lines of best fit are plotted for each group. The black line is the line of best fit for the two groups combined. The correlations are very weak the $r^2$ statistics are 0.0146 for the AD group, 0.0168 for the MCI group and 0.0060 for the two groups combined\relax }}{22}
 \addvspace {10\p@ }
