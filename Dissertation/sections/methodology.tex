@@ -202,4 +202,136 @@ In contrast to the non-linear dimensionality reduction of t-SNE, Principal Compo
 
 An advantage to PCA is that it still has defined axes whereas t-SNE just displays the pairwise similarity between points via the separation between them. Although the PCA axes may not always be physically meaningful (as it is just a linear combination of the original features) it can be useful to know which of the original features are responsible for most of the variance in the data and this information can be extracted from the principal components.
 
+For the PCA plots the data used was a reduced feature set of six features: the spectral bands averaged over all brain regions. This was done such that the projections of the original axes could also be placed onto the plot so that it was possible to easily see which features contributed the most to the principal components - if this had been done with the full set of 30 features the plot would have been much too crowded. The plots are two-dimensional scatter plots using the first two principle components (i.e. the two that explain the most variance) because three-dimensional plots are difficult to clearly interpret when printed as one cannot rotate them so they may be misleading.
+
+Plots were produced for the healthy dataset across all age groups as shown in Figure \ref{fig:pcahealthyplot} and for all classes across all age groups as shown in Figure \ref{fig:pcatotalplot}. These were not separable and as their t-SNE plots were not separable either and t-SNE is generally believed to be better at retaining the inherent high dimensional structure of the data\cite{Bushati2011} there seemed little benefit in including the other plots which just had the same result.
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{pcahealthyplot.pdf}
+    \caption{The PCA projection of the healthy dataset, the two principal components explained 86.76\% of the data. The age groups following age groups were plotted: 50-59 (green), 60-69 (blue), 70-79 (red), 80-89 (magenta). Note that the groups are not separable.}
+    \label{fig:pcahealthyplot}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{pcatotalplot.pdf}
+    \caption{The PCA projection of the total dataset, the two principal components explained 86.51\% of the data. The classes are displayed as follows: Healthy (green), MCI (yellow), Alzheimer's Disease (red). Note that the groups are not separable.}
+    \label{fig:pcatotalplot}
+\end{figure}
+
+
+
+\subsection{Parallel Coordinates plots}
+
+A popular method to investigate the relationships between variables is the Parallel Coordinates Plot (PCP). It can also be used to examine the differences between classes and has had many applications ranging from optimising manufacturing to economic modelling \cite{Inselberg1997}.
+
+The PCPs were produced using the reduced feature set (the same as used for the PCA plots) so that the axes could be reasonably spaced.
+
+In the PCP each polyline represents a datapoint and it intercepts the axes at the value it has in the dimension represented by that axis. Therefore parallel lines between axes indicate a positive correlation between them, where crossing of lines in an X-shape indicates a negative correlation and random crossing indicates little or no relation.\cite{Inselberg1997}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{hparacoords.pdf}
+    \caption{The Parallel Coordinate Plot of the healthy dataset divided into different age groups, there is no discernable pattern or separation between them}
+    \label{fig:hparacoords}
+\end{figure}
+
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{mciparacoords.pdf}
+    \caption{The Parallel Coordinate Plot of the MCI dataset divided into different age groups, there is no discernable pattern or separation between them}
+    \label{fig:mciparacoords}
+\end{figure}
+
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{alzparacoords.pdf}
+    \caption{The Parallel Coordinate Plot of the Alzheimer's dataset divided into different age groups, there is no discernable pattern or separation between them}
+    \label{fig:alzparacoords}
+\end{figure}
+
+As can be seen in Figures \ref{fig:hparacoords}, \ref{fig:mciparacoords} and \ref{fig:alzparacoords} there was no clear distinction between the age groups which further explains why the model for predicting age from the relative powers wasn't very successful and corroborates the results of the t-SNE and PCA projections.
+
+
+\subsection{Chernoff Faces}
+
+A final and perhaps whimsical method of visualising multidimensional data is the \textit{glyph} based approach of Chernoff faces. These use the values of feature that a sample has to construct a human face, with the feature values being used to determine the size and shape of various parts of the face such as the eyes, mouth etc. The reasoning behind such a visualisation is that the human mind is adept at discerning the differences between human faces and thus can distinguish between relatively similar data more easily when it is presented in this manner. \cite{Chernoff1973}
+
+The Chernoff Faces presented here used the reduced six feature set rather than the full set of 30 features because the Chernoff face package that was used did not have 30 tunable parameters. The features were used to determine the facial characteristics as follows in Table \ref{tab:chernoff}.
+
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}[h!]{|c|c|}
+\hline
+Relative Power Band & Chernoff Face Characteristic \\
+\hline
+Delta & Size of face \\
+\hline
+Theta & Forehead/jaw relative arc length \\
+\hline
+Alpha & Shape of forehead\\
+\hline
+Beta1 & Shape of jaw\\
+\hline
+Beta2 & Width between eyes\\
+\hline
+Gamma & Vertical position of eyes\\
+\hline
+\end{tabular}
+\caption{The features and the corresponding facial characteristic in the Chernoff Face}
+\label{tab:chernoff}
+\end{center}
+\end{table}
+
+The datasets for the different classes were separated into the same age groups as before and averaged to produce `composite' Chernoff faces for each age group, note that the MCI dataset had no subjects aged 50-59 and thus it only has faces for the 60-69, 70-79 and 80-89 age groups.
+
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{hChernoffFaces50607080.pdf}
+    \caption{The Chernoff faces for the healthy dataset. Face 1 is age group 50-59, Face 2 is age group 60-69, Face 3 is age group 70-79, Face 4 is age group 80-89}
+    \label{fig:hchernoff}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{mciChernoffFaces607080.pdf}
+    \caption{The Chernoff faces for the MCI dataset. Face 1 is age group 60-69, Face 2 is age group 70-79, Face 3 is age group 80-89}
+    \label{fig:mcichernoff}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{alzChernoffFaces50607080.pdf}
+    \caption{The Chernoff faces for the Alzheimer's Disease dataset. Face 1 is age group 50-59, Face 2 is age group 60-69, Face 3 is age group 70-79, Face 4 is age group 80-89}
+    \label{fig:alzchernoff}
+\end{figure}
+
+We can observe some differences between the age groups which perhaps explains why the age model didn't completely fail. However, as the relative differences between age groups seem the same in all the classes this implies that distinguishing between them will be very difficult, if possible, which supports the conclusions drawn from the previous visualisation techniques.
+
+
+
+
+
+
+\section{Classification}
+
+
+
+
+
+
+
+%deltarp - Size of face
+%thetarp - Forehead/jaw relative arc length
+%alpharp - Shape of forehead
+%beta1rp - Shape of jaw
+%beta2rp - Width between eyes
+%gammarp - Vertical position of eyes
+
+
 
