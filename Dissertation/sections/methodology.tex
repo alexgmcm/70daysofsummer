@@ -320,18 +320,101 @@ We can observe some differences between the age groups which perhaps explains wh
 
 \section{Classification}
 
+It was desired to classify a given subject as either healthy, suffering from MCI or suffering from Alzheimer's. This is an example of a \textit{supervised learning} problem as we have a fully labelled training and test set. As we have three classes it is \textit{multi-class classfication} as opposed to the more common \textit{binary classification} problem when one has only two classes. Any multi-class classification problem can be decomposed into several binary classification problem by training the same number of binary classifiers as classes with labels that are 1 for a certain class and 0 for all other classes. The test set is then classified according to which binary classifier most confidently predicted a value of 1. \cite{Witten2011}
+
+RUSBoost was chosen as the classification algorithm because it is a ensemble multiclass classification algorithm that is robust to skewed classes in which the proportions of the classes present in the dataset is imbalanced.\cite{Seifert2010} The data we have suffers from class imbalance as shown in Table \ref{tab:classimbalance} It is essentially an extension of the highly popular AdaBoost algorithm which uses adaptive boosting for classification and has been extended from binary to multiclass classification by the AdaBoost.M1 algorithm\cite{Witten2011}.
+
+Adaptive boosting is an ensemble method which trains a series of weak learners and then uses a combination of their output (such as voting for classification) to classify the new sample. It is adaptive because each new weak classifier that is introduced is trained on a weighted training set and the weights are adjusted according to the success rate of previous classifers on the samples. Therefore data samples which have not yet been classified correctly are given a high weight so that future classifiers will learn to classify them properly - this has the advantage that the combined strong classifier will know how to classify any data that is similar to that in the training set, but it also makes the algorithm highly sensitive to outliers.\cite{Witten2011}
+
+To address class imbalance there are two possible strategies, one can either \textit{oversample} the minority classes  (e.g. sampling with replacement as in bootstrapping, creating synthetic data via interpolation of minority samples etc.) or one can \textit{undersample} the majority set (e.g. randomly leave out some of the majority class samples) until the desired class proportions are reached in the sample set.
+
+RUSBoost utilises Random UnderSampling whereas an alternative SMOTEBoost uses Synthetic Minority Oversampling Technique (i.e. creating synthetic data by interpolation as mentioned previously). RUSBoost has been shown to have equal or better performance than SMOTEBoost with the additional advantages that as it uses a smaller training set it is quicker to train and as it doesn't require the generation of synthetic data is is much less computationally complex, this means that it is more efficient whilst still achieving an equal or better rate of classification accuracy. \cite{Seifert2010}
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}[h!]{|c|c|c|}
+\hline
+Class & Count & Percentage of total data \\
+\hline
+Healthy & 220 & 79.14\% \\
+\hline
+AD & 39 & 14.03\% \\
+\hline
+MCI & 19 & 6.83\% \\
+\hline
+\end{tabular}
+\caption{The proportion of classes in the data, note the imbalance}
+\label{tab:classimbalance}
+\end{center}
+\end{table}
+
+
+
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{cc|c|c|c|}
+\cline{3-5}
+& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & Healthy & AD & MCI \\ \cline{1-5}
+\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{Healthy} & 198 & 0 & 22\\ \cline{2-5}
+\multicolumn{1}{ |c  }{}  & 
+\multicolumn{1}{ |c| }{AD} & 22 & 6 & 11 \\ \cline{2-5}
+\multicolumn{1}{ |c  }{}  & 
+\multicolumn{1}{ |c| }{MCI} & 9 & 2 & 8 \\
+\cline{1-5}
+
+\end{tabular}
+\caption{An example confusion matrix (from the model from the last fold of ten-fold cross-validation) for the classifier trained on the linear regression model residuals (all samples)}
+\label{tab:residconfusion}
+\end{center}
+\end{table}
 
 
 
 
 
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{cc|c|c|c|}
+\cline{3-5}
+& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & Healthy & AD & MCI \\ \cline{1-5}
+\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{Healthy} & 100 & 52 & 68\\ \cline{2-5}
+\multicolumn{1}{ |c  }{}  & 
+\multicolumn{1}{ |c| }{AD} & 7 & 24 & 8 \\ \cline{2-5}
+\multicolumn{1}{ |c  }{}  & 
+\multicolumn{1}{ |c| }{MCI} & 6 & 5 & 8 \\
+\cline{1-5}
 
-%deltarp - Size of face
-%thetarp - Forehead/jaw relative arc length
-%alpharp - Shape of forehead
-%beta1rp - Shape of jaw
-%beta2rp - Width between eyes
-%gammarp - Vertical position of eyes
+\end{tabular}
+\caption{An example confusion matrix (from the model from the last fold of ten-fold cross-validation) for the classifier trained on the full feature set (30 features) of relative powers divided across the brain regions (all samples)}
+\label{tab:fulldataconfusion}
+\end{center}
+\end{table}
+
+
+The confusion matrices shown in Tables \ref{tab:residconfusion} and \ref{tab:fulldataconfusion} are taken from the final fold of cross-validation for classifiers fit to the residuals from the linear regression model and to the full feature set respectively. In the ideal case all of the examples would be on the leading diagonal of the matrix, as these are the correctly classified examples.
+
+The average cross-validated classification accuracy across 10-fold was 76.26\% for the classifier trained on the residuals of the linear regression model and 47.48\% for the classifier trained on the complete relative power feature set.
+
+The classifiers consisted of a boosted ensemble of 1500 decision trees. As shown in Figures \ref{fig:resid1500treesCVerror} and \ref{fig:full1500treesCVerror} the classification error began to plateau at 1500 weak learners and adding more and more would eventually lead to overfitting and an increasing error rate, but as it was computationally expensive and even 1500 learners was quite time-consuming to train ($\approx30$ minutes training time) it seemed appropriate to stop once such diminishing returns were observed.
+
+
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{resid1500treesCVerror.pdf}
+    \caption{The classification error plotted as a a function of the number of weak classifiers for the ensemble trained on the residuals of the linear regression model}
+    \label{fig:resid1500treesCVerror}
+\end{figure}
+
+
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{full1500treesCVerror.pdf}
+    \caption{The classification error plotted as a a function of the number of weak classifiers for the ensemble trained on the full feature set of thirty relative powers}
+    \label{fig:full1500treesCVerror}
+\end{figure}
 
 
 

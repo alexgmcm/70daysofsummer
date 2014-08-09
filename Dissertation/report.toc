@@ -1,18 +1,22 @@
-\contentsline {chapter}{\numberline {1}Introduction}{7}
-\contentsline {section}{\numberline {1.1}Motivation}{7}
-\contentsline {section}{\numberline {1.2}Hypothesis and Objectives}{8}
-\contentsline {section}{\numberline {1.3}Results Achieved}{9}
-\contentsline {section}{\numberline {1.4}Outline}{10}
-\contentsline {chapter}{\numberline {2}Background}{11}
-\contentsline {section}{\numberline {2.1}Alzheimer's Disease}{11}
-\contentsline {section}{\numberline {2.2}Magnetoencephalography}{13}
-\contentsline {section}{\numberline {2.3}Previous work}{14}
-\contentsline {chapter}{\numberline {3}Methodology}{15}
-\contentsline {section}{\numberline {3.1}Data cleaning}{15}
-\contentsline {section}{\numberline {3.2}Artefact Rejection}{17}
-\contentsline {section}{\numberline {3.3}Filtering and Feature Extraction}{18}
-\contentsline {section}{\numberline {3.4}Model Fitting}{19}
-\contentsline {section}{\numberline {3.5}Data visualisation}{21}
-\contentsline {subsection}{\numberline {3.5.1}t-Distributed Stochastic Neighbour Embedding}{21}
-\contentsline {chapter}{\numberline {4}Conclusion and future works}{23}
-\contentsline {chapter}{Bibliography}{24}
+\contentsline {chapter}{\numberline {1}Introduction}{8}
+\contentsline {section}{\numberline {1.1}Motivation}{8}
+\contentsline {section}{\numberline {1.2}Hypothesis and Objectives}{9}
+\contentsline {section}{\numberline {1.3}Results Achieved}{10}
+\contentsline {section}{\numberline {1.4}Outline}{11}
+\contentsline {chapter}{\numberline {2}Background}{12}
+\contentsline {section}{\numberline {2.1}Alzheimer's Disease}{12}
+\contentsline {section}{\numberline {2.2}Magnetoencephalography}{14}
+\contentsline {section}{\numberline {2.3}Previous work}{15}
+\contentsline {chapter}{\numberline {3}Methodology}{16}
+\contentsline {section}{\numberline {3.1}Data cleaning}{16}
+\contentsline {section}{\numberline {3.2}Artefact Rejection}{18}
+\contentsline {section}{\numberline {3.3}Filtering and Feature Extraction}{19}
+\contentsline {section}{\numberline {3.4}Model Fitting}{20}
+\contentsline {section}{\numberline {3.5}Data visualisation}{22}
+\contentsline {subsection}{\numberline {3.5.1}t-Distributed Stochastic Neighbour Embedding}{22}
+\contentsline {subsection}{\numberline {3.5.2}Principal Components Analysis}{26}
+\contentsline {subsection}{\numberline {3.5.3}Parallel Coordinates plots}{28}
+\contentsline {subsection}{\numberline {3.5.4}Chernoff Faces}{29}
+\contentsline {section}{\numberline {3.6}Classification}{32}
+\contentsline {chapter}{\numberline {4}Conclusion and future works}{38}
+\contentsline {chapter}{Bibliography}{39}

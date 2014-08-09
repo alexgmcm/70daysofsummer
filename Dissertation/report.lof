@@ -1,9 +1,23 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The progression of Alzheimer's Disease and the associated MMSE scores.\cite {Burns2009}\relax }}{12}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The progression of Alzheimer's Disease and the associated MMSE scores.\cite {Burns2009}\relax }}{13}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The artefact rejection GUI from FieldTrip.\relax }}{17}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces An example PSD taken from the data. Notice the sharp decline in power at 1.5 and 40 Hz due to the bandpass filter.\relax }}{19}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces The division of the MEG channels into regions: Anterior (cyan), Central (red), Left Lateral (yellow), Right Lateral (green) and Posterior (blue) \cite {Escudero2013}\relax }}{20}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces The MMSE score plotted against the residuals of the model, the lines of best fit are plotted for each group. The black line is the line of best fit for the two groups combined. The correlations are very weak the $r^2$ statistics are 0.0146 for the AD group, 0.0168 for the MCI group and 0.0060 for the two groups combined\relax }}{22}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The artefact rejection GUI from FieldTrip.\relax }}{18}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces An example PSD taken from the data. Notice the sharp decline in power at 1.5 and 40 Hz due to the bandpass filter.\relax }}{20}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The division of the MEG channels into regions: Anterior (cyan), Central (red), Left Lateral (yellow), Right Lateral (green) and Posterior (blue) \cite {Escudero2013}\relax }}{21}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces The MMSE score plotted against the residuals of the model, the lines of best fit are plotted for each group. The black line is the line of best fit for the two groups combined. The correlations are very weak: the $r^2$ statistics are 0.0146 for the AD group (blue), 0.0168 for the MCI group (red) and 0.0060 for the two groups combined (black)\relax }}{23}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces The t-SNE visualisation of 6000 handwritten digits from the MNIST data set.\cite {Maaten2008} Note that the classes are clearly separable.\relax }}{24}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces The t-SNE visualisation of the healthy subjects, divided into age groups. Note that the groups are not separable.\relax }}{25}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces The t-SNE visualisation of the MCI patients, divided into age groups. Note that the groups are not separable.\relax }}{26}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces The t-SNE visualisation of the AD patients, divided into age groups. Note that the groups are not separable.\relax }}{27}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces The t-SNE visualisation of all the groups. Note that the groups are not separable but this could be due to the effect of age.\relax }}{28}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces The t-SNE visualisation of the all the groups, only subjects aged 70-79. Note that the groups are not separable. This implies classification will be difficult if not impossible.\relax }}{29}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces The PCA projection of the healthy dataset, the two principal components explained 86.76\% of the data. The age groups following age groups were plotted: 50-59 (green), 60-69 (blue), 70-79 (red), 80-89 (magenta). Note that the groups are not separable.\relax }}{30}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces The PCA projection of the total dataset, the two principal components explained 86.51\% of the data. The classes are displayed as follows: Healthy (green), MCI (yellow), Alzheimer's Disease (red). Note that the groups are not separable.\relax }}{31}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces The Parallel Coordinate Plot of the healthy dataset divided into different age groups, there is no discernable pattern or separation between them\relax }}{32}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces The Parallel Coordinate Plot of the MCI dataset divided into different age groups, there is no discernable pattern or separation between them\relax }}{33}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces The Parallel Coordinate Plot of the Alzheimer's dataset divided into different age groups, there is no discernable pattern or separation between them\relax }}{34}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces The Chernoff faces for the healthy dataset. Face 1 is age group 50-59, Face 2 is age group 60-69, Face 3 is age group 70-79, Face 4 is age group 80-89\relax }}{35}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces The Chernoff faces for the MCI dataset. Face 1 is age group 60-69, Face 2 is age group 70-79, Face 3 is age group 80-89\relax }}{36}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces The Chernoff faces for the Alzheimer's Disease dataset. Face 1 is age group 50-59, Face 2 is age group 60-69, Face 3 is age group 70-79, Face 4 is age group 80-89\relax }}{37}
 \addvspace {10\p@ }
