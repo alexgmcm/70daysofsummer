@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.2)  8 AUG 2014 21:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.2)  11 AUG 2014 21:42
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**report
+**report.tex
 (./report.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 2 languages loaded.
@@ -889,16 +889,6 @@ back.pdf>] [1
  [5
 
 ] (./report.lof
-
-LaTeX Warning: Citation `Burns2009' on page 6 undefined on input line 3.
-
-
-LaTeX Warning: Citation `Escudero2013' on page 6 undefined on input line 7.
-
-
-LaTeX Warning: Citation `Maaten2008' on page 6 undefined on input line 9.
-
-
 Overfull \hbox (4.11142pt too wide) in paragraph at lines 9--9
  [][] []\OT1/cmr/m/n/12 The t-SNE vi-su-al-i-sa-tion of 6000 hand-writ-ten dig-
 its from the MNIST 
@@ -918,21 +908,6 @@ ded into age groups.
 
  [7] (./sections/intro.tex
 Chapter 1.
-
-LaTeX Warning: Citation `Hebert2014' on page 8 undefined on input line 7.
-
-
-Overfull \hbox (4.65993pt too wide) in paragraph at lines 7--8
-\OT1/cmr/m/n/12 creas-ing preva-lence of de-men-tia. [\OT1/cmr/bx/n/12 ?\OT1/cm
-r/m/n/12 ] There-fore the ac-cu-rate di-ag-no-sis of Alzheimer's
- []
-
-
-LaTeX Warning: Citation `Fernandez2013' on page 8 undefined on input line 9.
-
-
-LaTeX Warning: Citation `Nestor2004' on page 8 undefined on input line 11.
-
 [8
 
 
@@ -976,94 +951,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
 ) (./sections/background.tex [11]
 Chapter 2.
-
-LaTeX Warning: Citation `Burns2009' on page 12 undefined on input line 3.
-
-
-LaTeX Warning: Citation `Burns2009' on page 12 undefined on input line 3.
-
-
-LaTeX Warning: Citation `McCann2004' on page 12 undefined on input line 5.
-
-
-LaTeX Warning: Citation `Stewart2002' on page 12 undefined on input line 5.
-
-
-LaTeX Warning: Citation `Burns2009' on page 12 undefined on input line 7.
-
 [12
 
-]
-
-LaTeX Warning: Citation `Burns2009' on page 13 undefined on input line 9.
-
-<images/MMSEgraph.jpg, id=57, 1284.8pt x 999.735pt>
+] <images/MMSEgraph.jpg, id=57, 1284.8pt x 999.735pt>
 File: images/MMSEgraph.jpg Graphic file (type jpg)
- <use images/MMSEgraph.jpg>
+
+<use images/MMSEgraph.jpg>
 Package pdftex.def Info: images/MMSEgraph.jpg used on input line 14.
 (pdftex.def)             Requested size: 412.56497pt x 321.02007pt.
-
-
-LaTeX Warning: Citation `Burns2009' on page 13 undefined on input line 15.
-
-
-LaTeX Warning: Citation `Burns2009' on page 13 undefined on input line 15.
-
-
-LaTeX Warning: Citation `Burns2009' on page 13 undefined on input line 19.
-
-
-LaTeX Warning: Citation `Hari2012' on page 13 undefined on input line 28.
-
-[13 <./images/MMSEgraph.jpg>]
-
-LaTeX Warning: Citation `Internationale2007' on page 14 undefined on input line
- 30.
-
-
-LaTeX Warning: Citation `Zani2002' on page 14 undefined on input line 37.
-
-
-LaTeX Warning: Citation `Gross2013' on page 14 undefined on input line 42.
-
-[14]
-
-LaTeX Warning: Citation `Williams2010' on page 15 undefined on input line 49.
-
-
-LaTeX Warning: Citation `Escudero2013' on page 15 undefined on input line 51.
-
-
-LaTeX Warning: Citation `Fernandez2012' on page 15 undefined on input line 53.
-
-
-LaTeX Warning: Citation `Gomez2013' on page 15 undefined on input line 53.
-
-) (./sections/methodology.tex [15]
+ [13 <./images/MMSEgraph.jpg>] [14])
+(./sections/methodology.tex [15]
 Chapter 3.
 [16
 
-]
-
-LaTeX Warning: Citation `Smith1999' on page 17 undefined on input line 13.
-
-
-LaTeX Warning: Citation `Oostenveld2011' on page 17 undefined on input line 14.
-
-
-[17] <images/ftartefactgui.png, id=74, 900.36375pt x 426.59375pt>
+] [17] <images/ftartefactgui.png, id=74, 900.36375pt x 426.59375pt>
 File: images/ftartefactgui.png Graphic file (type png)
 
 <use images/ftartefactgui.png>
 Package pdftex.def Info: images/ftartefactgui.png used on input line 35.
 (pdftex.def)             Requested size: 412.56497pt x 195.4739pt.
  [18 <./images/ftartefactgui.png>]
-
-LaTeX Warning: Citation `Gomez2013' on page 19 undefined on input line 47.
-
-
-LaTeX Warning: Citation `Welch1967' on page 19 undefined on input line 47.
-
 <images/postfilterexamplespectra.pdf, id=81, 494.84875pt x 391.4625pt>
 File: images/postfilterexamplespectra.pdf Graphic file (type pdf)
 
@@ -1075,12 +982,6 @@ Package pdftex.def Info: images/postfilterexamplespectra.pdf used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation `Gomez2013' on page 19 undefined on input line 57.
-
-
-LaTeX Warning: Citation `Escudero2013' on page 19 undefined on input line 59.
-
 [19] <images/sensorareas2.png, id=86, 619.31375pt x 485.815pt>
 File: images/sensorareas2.png Graphic file (type png)
 
@@ -1089,32 +990,12 @@ Package pdftex.def Info: images/sensorareas2.png used on input line 74.
 (pdftex.def)             Requested size: 330.05322pt x 258.91882pt.
 
 
-LaTeX Warning: Citation `Escudero2013' on page 20 undefined on input line 75.
-
-
-LaTeX Warning: Citation `Escudero2013' on page 20 undefined on input line 75.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation `Gomez2013' on page 20 undefined on input line 79.
-
 [20 <./images/postfilterexamplespectra.pdf>] [21 <./images/sensorareas2.png>]
-
-LaTeX Warning: Citation `Witten2011' on page 22 undefined on input line 96.
-
-
-LaTeX Warning: Citation `Witten2011' on page 22 undefined on input line 96.
-
-
-LaTeX Warning: Reference `fig:cogscorecorrel' on page 22 undefined on input lin
-e 115.
-
-
-Overfull \hbox (2.09912pt too wide) in paragraph at lines 115--116
-\OT1/cmr/m/n/12 the sub-jects MMSE scores in Fig-ure [] (MMSE data only avail-a
-ble for Alzheimer's
+Overfull \hbox (4.36285pt too wide) in paragraph at lines 115--116
+\OT1/cmr/m/n/12 the sub-jects MMSE scores in Fig-ure 3.4[] (MMSE data only avai
+l-able for Alzheimer's
  []
 
 <images/cogscorecorrel.pdf, id=98, 489.83pt x 393.47pt>
@@ -1127,17 +1008,7 @@ Package pdftex.def Info: images/cogscorecorrel.pdf used on input line 119.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation `Maaten2008' on page 22 undefined on input line 135.
-
-[22]
-
-LaTeX Warning: Citation `Maaten2008' on page 23 undefined on input line 137.
-
-[23 <./images/cogscorecorrel.pdf>]
-
-LaTeX Warning: Citation `Maaten2008' on page 24 undefined on input line 139.
-
+[22] [23 <./images/cogscorecorrel.pdf>]
 <images/mnisttsne.png, id=112, 723.70375pt x 575.14874pt>
 File: images/mnisttsne.png Graphic file (type png)
 
@@ -1146,29 +1017,19 @@ Package pdftex.def Info: images/mnisttsne.png used on input line 146.
 (pdftex.def)             Requested size: 412.56497pt x 327.88206pt.
 
 
-LaTeX Warning: Citation `Maaten2008' on page 24 undefined on input line 147.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation `Maaten2008' on page 24 undefined on input line 147.
-
-
-LaTeX Warning: Reference `htsneplot' on page 24 undefined on input line 152.
-
-
-LaTeX Warning: Reference `mcitsneplot' on page 24 undefined on input line 152.
-
-
-LaTeX Warning: Reference `alztsneplot' on page 24 undefined on input line 152.
-
-[24 <./images/mnisttsne.png>]
-<images/htsneplot.pdf, id=117, 458.71375pt x 373.395pt>
+<images/htsneplot.pdf, id=113, 458.71375pt x 373.395pt>
 File: images/htsneplot.pdf Graphic file (type pdf)
 
 <use images/htsneplot.pdf>
 Package pdftex.def Info: images/htsneplot.pdf used on input line 157.
 (pdftex.def)             Requested size: 412.56497pt x 335.84727pt.
 
-<images/mcitsneplot.pdf, id=118, 458.71375pt x 373.395pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/mcitsneplot.pdf, id=114, 458.71375pt x 373.395pt>
 File: images/mcitsneplot.pdf Graphic file (type pdf)
 
 <use images/mcitsneplot.pdf>
@@ -1178,7 +1039,7 @@ Package pdftex.def Info: images/mcitsneplot.pdf used on input line 165.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/alztsneplot.pdf, id=119, 458.71375pt x 373.395pt>
+<images/alztsneplot.pdf, id=115, 458.71375pt x 373.395pt>
 File: images/alztsneplot.pdf Graphic file (type pdf)
 
 <use images/alztsneplot.pdf>
@@ -1188,7 +1049,7 @@ Package pdftex.def Info: images/alztsneplot.pdf used on input line 173.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/tottsneplot.pdf, id=120, 458.71375pt x 373.395pt>
+<images/tottsneplot.pdf, id=116, 458.71375pt x 373.395pt>
 File: images/tottsneplot.pdf Graphic file (type pdf)
 
 <use images/tottsneplot.pdf>
@@ -1198,7 +1059,7 @@ Package pdftex.def Info: images/tottsneplot.pdf used on input line 184.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/seventiestsneplot.pdf, id=121, 458.71375pt x 373.395pt>
+<images/seventiestsneplot.pdf, id=117, 458.71375pt x 373.395pt>
 File: images/seventiestsneplot.pdf Graphic file (type pdf)
 
 <use images/seventiestsneplot.pdf>
@@ -1208,15 +1069,8 @@ Package pdftex.def Info: images/seventiestsneplot.pdf used on input line 192.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation `Bushati2011' on page 25 undefined on input line 201.
-
-[25 <./images/htsneplot.pdf>] [26 <./images/mcitsneplot.pdf>]
-
-LaTeX Warning: Citation `Bushati2011' on page 27 undefined on input line 207.
-
-[27 <./images/alztsneplot.pdf>]
-<images/pcahealthyplot.pdf, id=146, 492.84125pt x 404.51125pt>
+[24] [25 <./images/mnisttsne.png>]
+<images/pcahealthyplot.pdf, id=125, 492.84125pt x 404.51125pt>
 File: images/pcahealthyplot.pdf Graphic file (type pdf)
 
 <use images/pcahealthyplot.pdf>
@@ -1226,7 +1080,7 @@ Package pdftex.def Info: images/pcahealthyplot.pdf used on input line 211.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/pcatotalplot.pdf, id=147, 492.84125pt x 404.51125pt>
+<images/pcatotalplot.pdf, id=126, 492.84125pt x 404.51125pt>
 File: images/pcatotalplot.pdf Graphic file (type pdf)
 
 <use images/pcatotalplot.pdf>
@@ -1236,16 +1090,8 @@ Package pdftex.def Info: images/pcatotalplot.pdf used on input line 218.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation `Inselberg1997' on page 28 undefined on input line 227.
-
-
-
-LaTeX Warning: Citation `Inselberg1997' on page 28 undefined on input line 231.
-
-
-[28 <./images/tottsneplot.pdf>]
-<images/hparacoords.pdf, id=156, 503.8825pt x 379.4175pt>
+[26 <./images/htsneplot.pdf>]
+<images/hparacoords.pdf, id=135, 503.8825pt x 379.4175pt>
 File: images/hparacoords.pdf Graphic file (type pdf)
 
 <use images/hparacoords.pdf>
@@ -1255,7 +1101,7 @@ Package pdftex.def Info: images/hparacoords.pdf used on input line 235.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/mciparacoords.pdf, id=157, 509.905pt x 379.4175pt>
+<images/mciparacoords.pdf, id=136, 509.905pt x 379.4175pt>
 File: images/mciparacoords.pdf Graphic file (type pdf)
 
 <use images/mciparacoords.pdf>
@@ -1265,7 +1111,7 @@ Package pdftex.def Info: images/mciparacoords.pdf used on input line 243.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/alzparacoords.pdf, id=158, 503.8825pt x 379.4175pt>
+<images/alzparacoords.pdf, id=137, 503.8825pt x 379.4175pt>
 File: images/alzparacoords.pdf Graphic file (type pdf)
 
 <use images/alzparacoords.pdf>
@@ -1275,29 +1121,22 @@ Package pdftex.def Info: images/alzparacoords.pdf used on input line 251.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation `Chernoff1973' on page 29 undefined on input line 261.
-
-[29 <./images/seventiestsneplot.pdf>]
+[27 <./images/mcitsneplot.pdf>] [28 <./images/alztsneplot.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/hChernoffFaces50607080.pdf, id=167, 360.34625pt x 357.335pt>
+<images/hChernoffFaces50607080.pdf, id=154, 360.34625pt x 357.335pt>
 File: images/hChernoffFaces50607080.pdf Graphic file (type pdf)
 
 <use images/hChernoffFaces50607080.pdf>
 Package pdftex.def Info: images/hChernoffFaces50607080.pdf used on input line 2
 95.
 (pdftex.def)             Requested size: 412.56497pt x 409.11638pt.
- [30 <./images/pcahealthyplot.pdf>]
 
-LaTeX Warning: Text page 31 contains only floats.
-
-[31 <./images/pcatotalplot.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/mciChernoffFaces607080.pdf, id=188, 454.69875pt x 172.645pt>
+<images/mciChernoffFaces607080.pdf, id=155, 454.69875pt x 172.645pt>
 File: images/mciChernoffFaces607080.pdf Graphic file (type pdf)
 
 <use images/mciChernoffFaces607080.pdf>
@@ -1308,7 +1147,7 @@ Package pdftex.def Info: images/mciChernoffFaces607080.pdf used on input line 3
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/alzChernoffFaces50607080.pdf, id=189, 360.34625pt x 357.335pt>
+<images/alzChernoffFaces50607080.pdf, id=156, 360.34625pt x 357.335pt>
 File: images/alzChernoffFaces50607080.pdf Graphic file (type pdf)
 
 <use images/alzChernoffFaces50607080.pdf>
@@ -1319,55 +1158,79 @@ Package pdftex.def Info: images/alzChernoffFaces50607080.pdf used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation `Witten2011' on page 32 undefined on input line 323.
-
-[32 <./images/hparacoords.pdf>]
-
-LaTeX Warning: Citation `Seifert2010' on page 33 undefined on input line 325.
+[29 <./images/tottsneplot.pdf>]
+Overfull \vbox (15.59038pt too high) has occurred while \output is active []
 
 
-LaTeX Warning: Citation `Witten2011' on page 33 undefined on input line 325.
+[30 <./images/seventiestsneplot.pdf>] [31 <./images/pcahealthyplot.pdf>]
+[32 <./images/pcatotalplot.pdf>]
+
+LaTeX Warning: Citation `Seifert2010' on page 33 undefined on input line 331.
 
 
-LaTeX Warning: Citation `Witten2011' on page 33 undefined on input line 327.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[33 <./images/mciparacoords.pdf>]
-
-LaTeX Warning: Citation `Seifert2010' on page 34 undefined on input line 331.
-
-[34 <./images/alzparacoords.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./sections/conclusion.tex [35 <./images/hChernoffFaces50607080.pdf>]
-[36 <./images/mciChernoffFaces607080.pdf>] [37 <./images/alzChernoffFaces506070
-80.pdf>]
+[33 <./images/hparacoords.pdf>] [34 <./images/mciparacoords.pdf>]
+<images/resid1500treesCVerror.pdf, id=209, 503.8825pt x 391.4625pt>
+File: images/resid1500treesCVerror.pdf Graphic file (type pdf)
+
+<use images/resid1500treesCVerror.pdf>
+Package pdftex.def Info: images/resid1500treesCVerror.pdf used on input line 40
+5.
+(pdftex.def)             Requested size: 412.56497pt x 320.51749pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/full1500treesCVerror.pdf, id=210, 503.8825pt x 391.4625pt>
+File: images/full1500treesCVerror.pdf Graphic file (type pdf)
+
+<use images/full1500treesCVerror.pdf>
+Package pdftex.def Info: images/full1500treesCVerror.pdf used on input line 414
+.
+(pdftex.def)             Requested size: 412.56497pt x 320.51749pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./sections/analysiseval.tex [35 <./images/alzparacoords.pdf>] [36 <./images/
+hChernoffFaces50607080.pdf>] [37 <./images/mciChernoffFaces607080.pdf>]
+[38 <./images/alzChernoffFaces50607080.pdf>] [39 <./images/resid1500treesCVerro
+r.pdf>] [40 <./images/full1500treesCVerror.pdf>]
 Chapter 4.
-) (./report.bbl [38
+[41
 
-]
+] [42]) (./sections/conclusion.tex [43]
+Chapter 5.
+)
+Overfull \hbox (3.89876pt too wide) in paragraph at lines 9--64
+\OT1/cmr/m/n/12 Ziv Com-plex-ity) as fea-tures as this has shown promise in pre
+-vi-ous stud-ies. [Hornero
+ []
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
+(./report.bbl [44
 
-) [39
+] [45
 
-] (./report.aux)
+] [46]) [47] (./report.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 22274 strings out of 495028
- 500311 string characters out of 6181498
- 663731 words of memory out of 5000000
- 24942 multiletter control sequences out of 15000+600000
+ 22323 strings out of 495028
+ 501238 string characters out of 6181498
+ 668731 words of memory out of 5000000
+ 24986 multiletter control sequences out of 15000+600000
  10995 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,10n,81p,1090b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,10n,81p,1410b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
@@ -1380,10 +1243,10 @@ fonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pf
 b>
-Output written on report.pdf (40 pages, 1007821 bytes).
+Output written on report.pdf (48 pages, 1044359 bytes).
 PDF statistics:
- 286 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
+ 324 PDF objects out of 1000 (max. 8388607)
+ 220 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

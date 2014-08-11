@@ -1,3 +1,155 @@
 \begin{thebibliography}{}
 
+\bibitem[Attal and Bhattacharjee, 2007]{Internationale2007}
+Attal, Y. and Bhattacharjee, M. (2007).
+\newblock {Modeling and detecting deep brain activity with MEG \& EEG}.
+\newblock {\em Proceedings of the 29th Annual International Conference of the
+  IEEE EMBS}, pages 4937--4940.
+
+\bibitem[Burns and Iliffe, 2009]{Burns2009}
+Burns, A. and Iliffe, S. (2009).
+\newblock {Alzheimer's Disease}.
+\newblock {\em BMJ}, 338.
+
+\bibitem[Bushati et~al., 2011]{Bushati2011}
+Bushati, N., Smith, J., Briscoe, J., and Watkins, C. (2011).
+\newblock {An intuitive graphical visualization technique for the interrogation
+  of transcriptome data.}
+\newblock {\em Nucleic acids research}, 39(17):7380--9.
+
+\bibitem[Chandola et~al., 2009]{Chandola2009}
+Chandola, V., Banerjee, A., and Kumar, V. (2009).
+\newblock {Anomaly detection}.
+\newblock {\em ACM Computing Surveys}, 41(3):1--58.
+
+\bibitem[Chernoff, 1973]{Chernoff1973}
+Chernoff, H. (1973).
+\newblock {The use of faces to represent points in k-dimensional space
+  graphically}.
+\newblock {\em Journal of the American Statistical Association},
+  68(342):361--368.
+
+\bibitem[Escudero et~al., 2013]{Escudero2013}
+Escudero, J., Ifeachor, E., Fern\'{a}ndez, A., L\'{o}pez-Ibor, J.~J., and
+  Hornero, R. (2013).
+\newblock {Changes in the MEG background activity in patients with positive
+  symptoms of schizophrenia: spectral analysis and impact of age.}
+\newblock {\em Physiological measurement}, 34(2):265--79.
+
+\bibitem[Fern\'{a}ndez et~al., 2013]{Fernandez2013}
+Fern\'{a}ndez, A., G\'{o}mez, C., Hornero, R., and L\'{o}pez-Ibor, J.~J.
+  (2013).
+\newblock {Complexity and schizophrenia.}
+\newblock {\em Progress in neuro-psychopharmacology \& biological psychiatry},
+  45:267--76.
+
+\bibitem[Fern\'{a}ndez et~al., 2012]{Fernandez2012}
+Fern\'{a}ndez, A., Zuluaga, P., Ab\'{a}solo, D., G\'{o}mez, C., Serra, A.,
+  M\'{e}ndez, M.~A., and Hornero, R. (2012).
+\newblock {Brain oscillatory complexity across the life span.}
+\newblock {\em Clinical neurophysiology}, 123(11):2154--62.
+
+\bibitem[G\'{o}mez and P\'{e}rez-Mac\'{\i}as, 2013]{Gomez2013}
+G\'{o}mez, C. and P\'{e}rez-Mac\'{\i}as, J. (2013).
+\newblock {Spectral changes in spontaneous MEG activity across the lifespan}.
+\newblock {\em Journal of neural engineering}, 10.
+
+\bibitem[Gross et~al., 2013]{Gross2013}
+Gross, J., Baillet, S., Barnes, G.~R., Henson, R.~N., Hillebrand, A., Jensen,
+  O., Jerbi, K., Litvak, V., Maess, B., Oostenveld, R., Parkkonen, L., Taylor,
+  J.~R., van Wassenhove, V., Wibral, M., and Schoffelen, J.-M. (2013).
+\newblock {Good practice for conducting and reporting MEG research.}
+\newblock {\em NeuroImage}, 65:349--63.
+
+\bibitem[Hari and Salmelin, 2012]{Hari2012}
+Hari, R. and Salmelin, R. (2012).
+\newblock {Magnetoencephalography: From SQUIDs to neuroscience. Neuroimage 20th
+  anniversary special edition.}
+\newblock {\em NeuroImage}, 61(2):386--96.
+
+\bibitem[Hebert et~al., 2003]{Hebert2014}
+Hebert, L.~E., Scherr, P.~A., Bienias, J.~L., Bennett, D.~A., and Evans, D.~A.
+  (2003).
+\newblock {Alzheimer Disease in the US Population}.
+\newblock {\em Archives of neurology}, 60.
+
+\bibitem[Hornero and Escudero, 2008]{Hornero2008}
+Hornero, R. and Escudero, J. (2008).
+\newblock {Spectral and nonlinear analyses of MEG background activity in
+  patients with Alzheimer's disease}.
+\newblock {\em Biomedical \ldots}, 55(6):1658--1665.
+
+\bibitem[Inselberg, 1997]{Inselberg1997}
+Inselberg, A. (1997).
+\newblock {Multidimensional detective}.
+\newblock In {\em Proceedings of VIZ '97: Visualization Conference, Information
+  Visualization Symposium and Parallel Rendering Symposium}, pages 100--107.
+  IEEE Comput. Soc.
+
+\bibitem[Long and Servedio, 2009]{Long2009}
+Long, P.~M. and Servedio, R.~a. (2009).
+\newblock {Random classification noise defeats all convex potential boosters}.
+\newblock {\em Machine Learning}, 78(3):287--304.
+
+\bibitem[Maaten and Hinton, 2008]{Maaten2008}
+Maaten, L. V.~D. and Hinton, G. (2008).
+\newblock {Visualizing data using t-SNE}.
+\newblock {\em Journal of Machine Learning Research}, 9:2579--2605.
+
+\bibitem[McCann et~al., 2004]{McCann2004}
+McCann, J.~J., Gilley, D.~W., Bienias, J.~L., Beckett, L.~a., and Evans, D.~a.
+  (2004).
+\newblock {Temporal patterns of negative and positive behavior among nursing
+  home residents with Alzheimer's disease.}
+\newblock {\em Psychology and aging}, 19(2):336--45.
+
+\bibitem[Nestor et~al., 2004]{Nestor2004}
+Nestor, P.~J., Scheltens, P., and Hodges, J.~R. (2004).
+\newblock {Advances in the early detection of Alzheimer's disease.}
+\newblock {\em Nature medicine}, 10 Suppl(8):S34--41.
+
+\bibitem[Oostenveld et~al., 2011]{Oostenveld2011}
+Oostenveld, R., Fries, P., Maris, E., and Schoffelen, J.-M. (2011).
+\newblock {FieldTrip: Open source software for advanced analysis of MEG, EEG,
+  and invasive electrophysiological data.}
+\newblock {\em Computational intelligence and neuroscience}, 2011:156869.
+
+\bibitem[Seiffert et~al., 2010]{Seiffert2010}
+Seiffert, C., Khoshgoftaar, T.~M., {Van Hulse}, J., and Napolitano, A. (2010).
+\newblock {RUSBoost: A Hybrid Approach to Alleviating Class Imbalance}.
+\newblock {\em IEEE Transactions on Systems, Man, and Cybernetics - Part A:
+  Systems and Humans}, 40(1):185--197.
+
+\bibitem[Smith, 1999]{Smith1999}
+Smith, S.~W. (1999).
+\newblock {\em {The Scientist and Engineer's guide to Digital Signal
+  Processing}}.
+\newblock California Technical Publishing, 2nd ed. edition.
+
+\bibitem[Stewart, 2002]{Stewart2002}
+Stewart, R. (2002).
+\newblock {Vascular dementia: a diagnosis running out of time}.
+\newblock {\em The British Journal of Psychiatry}, 180(2):152--156.
+
+\bibitem[Welch, 1967]{Welch1967}
+Welch, P. (1967).
+\newblock {The use of fast Fourier transform for the estimation of power
+  spectra: a method based on time averaging over short, modified periodograms}.
+\newblock {\em IEEE Transactions on audio and electroacoustics}, (2):70--73.
+
+\bibitem[Williams and Sachdev, 2010]{Williams2010}
+Williams, M.~a. and Sachdev, P.~S. (2010).
+\newblock {Magnetoencephalography in neuropsychiatry: ready for application?}
+\newblock {\em Current opinion in psychiatry}, 23(3):273--7.
+
+\bibitem[Witten et~al., 2011]{Witten2011}
+Witten, I.~H., Frank, E., and Hall, M.~A. (2011).
+\newblock {\em {Data Mining: Practical Machine Learning Tools and Techniques}}.
+\newblock Elsevier Inc., 3rd editio edition.
+
+\bibitem[Zani and Proverbio, 2002]{Zani2002}
+Zani, A. and Proverbio, A.~M. (2002).
+\newblock {\em {The cognitive electrophysiology of mind and brain}}.
+\newblock Elsevier Science (USA), 1 edition.
+
 \end{thebibliography}

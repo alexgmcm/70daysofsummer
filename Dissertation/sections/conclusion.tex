@@ -1,2 +1,9 @@
-\chapter{Conclusion and future works}
+\chapter{Conclusion and future work}
 
+In conclusion, the work achieved its aims of building a model of healthy ageing but it had a high RMSE value even for the healthy dataset. As predicted the RMSE value was worse for the MCI patients and worse still for the AD patients. However the predicted age was often younger than the actual age rather than older which does not support the hypothesis that AD leads to a more rapid ageing of the spectral profile of the brain. 
+
+The expected correlation between the residuals of the model and the cognitive test scores of the diseased patients was observed, but it was very weak (as measured by $r^2$ values).
+
+Visualisations of the data showed that the classes did not seem separable and this was supported by the poor performance of the classifier which although it was better than random guessing it was still poor and worse than just guessing the majority class (due to skewed classes) it certainly lacked the high sensitivity and specificity required for medical diagnosis. Although some of this could be the result of label noise (inaccurate labels) to which boosted algorithms are particularly sensitive, the large RMSE values of the ageing model show that it is likely that the data is noisy and may contain relatively little information pertaining to the classification task.
+
+Future work could involve the use of complexity measures (such as the Lempel-Ziv Complexity) as features as this has shown promise in previous studies.\cite{Hornero2008}\cite{Fernandez2012}. The data cleaning process may also be improved by the use of anomaly detection methods\cite{Chandola2009} to detect epochs in which the patient was asleep, which can often be missed by the experimenter.  
