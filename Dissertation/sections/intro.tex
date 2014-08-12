@@ -35,9 +35,9 @@ Initially the results seemed optimistic as the RMSE values for the healthy, MCI 
 
 However, subsequent projections of the data were worrying as the classes did not appear to be separable, neither by age within a class nor between classes as a whole. This implied that perhaps the relative powers would not allow us to distinguish between the healthy subjects and diseased patients, and thus the model based on them would also lack such discriminative ability. 
 
-This was corroborated by the classifier results which were no better than a `dumb' classifier which simply predicts all subjects to be healthy irrespective of the data. However, given that the data processing pipeline from raw MEG signal to feature vector is very long and involves many variables such as how to perform the artefact detection, filtering, whether to include noisier signals etc. this study does not prove that the relative powers are unable to distinguish between the disease states.
+Using the macro-averaged $F_1$ score as a figure of merit for multi-class classification\cite{Sokolova2009} the classifier results were $F_{1M}$ values of 0.542, 0.458 and 0.294 respectively for the training on the linear regression model residuals, the full feature set, and a dummy classifier that just always predicted `\textit{Healthy}' for all subjects as it is the majority class. An $F_{1M}$ score of 1 is ideal, whilst 0 is the worst possible score. Therefore the classification results were not excellent, but were better than random guessing or the dummy classifier. But the classifiers lacked the requisite specificity and sensitivity for medical diagnosis where both false positives and false negatives have a high cost.
 
-It is possible that careful tweaking of the pipeline would result in success. However, as a preliminary study it demonstrates that such a task is likely to be difficult.
+It is possible that careful tweaking of the pipeline would result in better performance. However, as a preliminary study it demonstrates that such a task is likely to be difficult.
 
 
 

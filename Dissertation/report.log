@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.2)  11 AUG 2014 21:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.2)  12 AUG 2014 16:33
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -953,7 +953,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 Chapter 2.
 [12
 
-] <images/MMSEgraph.jpg, id=57, 1284.8pt x 999.735pt>
+] <images/MMSEgraph.jpg, id=58, 1284.8pt x 999.735pt>
 File: images/MMSEgraph.jpg Graphic file (type jpg)
 
 <use images/MMSEgraph.jpg>
@@ -964,7 +964,7 @@ Package pdftex.def Info: images/MMSEgraph.jpg used on input line 14.
 Chapter 3.
 [16
 
-] [17] <images/ftartefactgui.png, id=74, 900.36375pt x 426.59375pt>
+] [17] <images/ftartefactgui.png, id=75, 900.36375pt x 426.59375pt>
 File: images/ftartefactgui.png Graphic file (type png)
 
 <use images/ftartefactgui.png>
@@ -1014,199 +1014,185 @@ File: images/mnisttsne.png Graphic file (type png)
 
 <use images/mnisttsne.png>
 Package pdftex.def Info: images/mnisttsne.png used on input line 146.
-(pdftex.def)             Requested size: 412.56497pt x 327.88206pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/htsneplot.pdf, id=113, 458.71375pt x 373.395pt>
+(pdftex.def)             Requested size: 330.05322pt x 262.3074pt.
+ [24 <./images/mnisttsne.png>]
+<images/htsneplot.pdf, id=117, 458.71375pt x 373.395pt>
 File: images/htsneplot.pdf Graphic file (type pdf)
 
 <use images/htsneplot.pdf>
 Package pdftex.def Info: images/htsneplot.pdf used on input line 157.
-(pdftex.def)             Requested size: 412.56497pt x 335.84727pt.
+(pdftex.def)             Requested size: 330.05322pt x 268.67897pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/mcitsneplot.pdf, id=114, 458.71375pt x 373.395pt>
+<images/mcitsneplot.pdf, id=118, 458.71375pt x 373.395pt>
 File: images/mcitsneplot.pdf Graphic file (type pdf)
 
 <use images/mcitsneplot.pdf>
 Package pdftex.def Info: images/mcitsneplot.pdf used on input line 165.
-(pdftex.def)             Requested size: 412.56497pt x 335.84727pt.
+(pdftex.def)             Requested size: 330.05322pt x 268.67897pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/alztsneplot.pdf, id=115, 458.71375pt x 373.395pt>
+<images/alztsneplot.pdf, id=119, 458.71375pt x 373.395pt>
 File: images/alztsneplot.pdf Graphic file (type pdf)
 
 <use images/alztsneplot.pdf>
 Package pdftex.def Info: images/alztsneplot.pdf used on input line 173.
-(pdftex.def)             Requested size: 412.56497pt x 335.84727pt.
+(pdftex.def)             Requested size: 330.05322pt x 268.67897pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/tottsneplot.pdf, id=116, 458.71375pt x 373.395pt>
+<images/tottsneplot.pdf, id=120, 458.71375pt x 373.395pt>
 File: images/tottsneplot.pdf Graphic file (type pdf)
 
 <use images/tottsneplot.pdf>
 Package pdftex.def Info: images/tottsneplot.pdf used on input line 184.
-(pdftex.def)             Requested size: 412.56497pt x 335.84727pt.
+(pdftex.def)             Requested size: 330.05322pt x 268.67897pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/seventiestsneplot.pdf, id=117, 458.71375pt x 373.395pt>
+<images/seventiestsneplot.pdf, id=121, 458.71375pt x 373.395pt>
 File: images/seventiestsneplot.pdf Graphic file (type pdf)
 
 <use images/seventiestsneplot.pdf>
 Package pdftex.def Info: images/seventiestsneplot.pdf used on input line 192.
-(pdftex.def)             Requested size: 412.56497pt x 335.84727pt.
+(pdftex.def)             Requested size: 330.05322pt x 268.67897pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24] [25 <./images/mnisttsne.png>]
-<images/pcahealthyplot.pdf, id=125, 492.84125pt x 404.51125pt>
+[25 <./images/htsneplot.pdf>]
+
+LaTeX Warning: Text page 26 contains only floats.
+
+[26 <./images/mcitsneplot.pdf> <./images/alztsneplot.pdf>] [27 <./images/tottsn
+eplot.pdf> <./images/seventiestsneplot.pdf>]
+<images/pcahealthyplot.pdf, id=156, 492.84125pt x 404.51125pt>
 File: images/pcahealthyplot.pdf Graphic file (type pdf)
 
 <use images/pcahealthyplot.pdf>
-Package pdftex.def Info: images/pcahealthyplot.pdf used on input line 211.
+Package pdftex.def Info: images/pcahealthyplot.pdf used on input line 212.
 (pdftex.def)             Requested size: 412.56497pt x 338.63907pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/pcatotalplot.pdf, id=126, 492.84125pt x 404.51125pt>
+<images/pcatotalplot.pdf, id=157, 492.84125pt x 404.51125pt>
 File: images/pcatotalplot.pdf Graphic file (type pdf)
 
 <use images/pcatotalplot.pdf>
-Package pdftex.def Info: images/pcatotalplot.pdf used on input line 218.
+Package pdftex.def Info: images/pcatotalplot.pdf used on input line 219.
 (pdftex.def)             Requested size: 412.56497pt x 338.63907pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[26 <./images/htsneplot.pdf>]
-<images/hparacoords.pdf, id=135, 503.8825pt x 379.4175pt>
+[28
+
+] [29 <./images/pcahealthyplot.pdf>] [30 <./images/pcatotalplot.pdf>]
+<images/hparacoords.pdf, id=181, 503.8825pt x 379.4175pt>
 File: images/hparacoords.pdf Graphic file (type pdf)
 
 <use images/hparacoords.pdf>
-Package pdftex.def Info: images/hparacoords.pdf used on input line 235.
-(pdftex.def)             Requested size: 412.56497pt x 310.65541pt.
+Package pdftex.def Info: images/hparacoords.pdf used on input line 236.
+(pdftex.def)             Requested size: 330.05322pt x 248.52896pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/mciparacoords.pdf, id=136, 509.905pt x 379.4175pt>
+<images/mciparacoords.pdf, id=182, 509.905pt x 379.4175pt>
 File: images/mciparacoords.pdf Graphic file (type pdf)
 
 <use images/mciparacoords.pdf>
-Package pdftex.def Info: images/mciparacoords.pdf used on input line 243.
-(pdftex.def)             Requested size: 412.56497pt x 307.00227pt.
+Package pdftex.def Info: images/mciparacoords.pdf used on input line 244.
+(pdftex.def)             Requested size: 330.05322pt x 245.5995pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/alzparacoords.pdf, id=137, 503.8825pt x 379.4175pt>
+<images/alzparacoords.pdf, id=183, 503.8825pt x 379.4175pt>
 File: images/alzparacoords.pdf Graphic file (type pdf)
 
 <use images/alzparacoords.pdf>
-Package pdftex.def Info: images/alzparacoords.pdf used on input line 251.
-(pdftex.def)             Requested size: 412.56497pt x 310.65541pt.
+Package pdftex.def Info: images/alzparacoords.pdf used on input line 252.
+(pdftex.def)             Requested size: 330.05322pt x 248.52896pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27 <./images/mcitsneplot.pdf>] [28 <./images/alztsneplot.pdf>]
+[31
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/hChernoffFaces50607080.pdf, id=154, 360.34625pt x 357.335pt>
+ <./images/hparacoords.pdf>] [32 <./images/mciparacoords.pdf> <./images/alzpara
+coords.pdf>]
+<images/hChernoffFaces50607080.pdf, id=205, 360.34625pt x 357.335pt>
 File: images/hChernoffFaces50607080.pdf Graphic file (type pdf)
 
 <use images/hChernoffFaces50607080.pdf>
 Package pdftex.def Info: images/hChernoffFaces50607080.pdf used on input line 2
-95.
-(pdftex.def)             Requested size: 412.56497pt x 409.11638pt.
+96.
+(pdftex.def)             Requested size: 330.05322pt x 327.29637pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/mciChernoffFaces607080.pdf, id=155, 454.69875pt x 172.645pt>
+<images/mciChernoffFaces607080.pdf, id=206, 454.69875pt x 172.645pt>
 File: images/mciChernoffFaces607080.pdf Graphic file (type pdf)
 
 <use images/mciChernoffFaces607080.pdf>
 Package pdftex.def Info: images/mciChernoffFaces607080.pdf used on input line 3
-02.
-(pdftex.def)             Requested size: 412.56497pt x 156.6488pt.
+03.
+(pdftex.def)             Requested size: 330.05322pt x 125.31851pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/alzChernoffFaces50607080.pdf, id=156, 360.34625pt x 357.335pt>
+<images/alzChernoffFaces50607080.pdf, id=207, 360.34625pt x 357.335pt>
 File: images/alzChernoffFaces50607080.pdf Graphic file (type pdf)
 
 <use images/alzChernoffFaces50607080.pdf>
 Package pdftex.def Info: images/alzChernoffFaces50607080.pdf used on input line
- 309.
-(pdftex.def)             Requested size: 412.56497pt x 409.11638pt.
+ 310.
+(pdftex.def)             Requested size: 330.05322pt x 327.29637pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[29 <./images/tottsneplot.pdf>]
-Overfull \vbox (15.59038pt too high) has occurred while \output is active []
+[33
 
+] [34 <./images/hChernoffFaces50607080.pdf> <./images/mciChernoffFaces607080.pd
+f>] [35 <./images/alzChernoffFaces50607080.pdf>] [36
 
-[30 <./images/seventiestsneplot.pdf>] [31 <./images/pcahealthyplot.pdf>]
-[32 <./images/pcatotalplot.pdf>]
-
-LaTeX Warning: Citation `Seifert2010' on page 33 undefined on input line 331.
-
+]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[33 <./images/hparacoords.pdf>] [34 <./images/mciparacoords.pdf>]
-<images/resid1500treesCVerror.pdf, id=209, 503.8825pt x 391.4625pt>
+[37] <images/resid1500treesCVerror.pdf, id=239, 503.8825pt x 391.4625pt>
 File: images/resid1500treesCVerror.pdf Graphic file (type pdf)
 
 <use images/resid1500treesCVerror.pdf>
-Package pdftex.def Info: images/resid1500treesCVerror.pdf used on input line 40
-5.
-(pdftex.def)             Requested size: 412.56497pt x 320.51749pt.
+Package pdftex.def Info: images/resid1500treesCVerror.pdf used on input line 41
+0.
+(pdftex.def)             Requested size: 330.05322pt x 256.41876pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/full1500treesCVerror.pdf, id=210, 503.8825pt x 391.4625pt>
+<images/full1500treesCVerror.pdf, id=240, 503.8825pt x 391.4625pt>
 File: images/full1500treesCVerror.pdf Graphic file (type pdf)
 
 <use images/full1500treesCVerror.pdf>
-Package pdftex.def Info: images/full1500treesCVerror.pdf used on input line 414
+Package pdftex.def Info: images/full1500treesCVerror.pdf used on input line 419
 .
-(pdftex.def)             Requested size: 412.56497pt x 320.51749pt.
+(pdftex.def)             Requested size: 330.05322pt x 256.41876pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./sections/analysiseval.tex [35 <./images/alzparacoords.pdf>] [36 <./images/
-hChernoffFaces50607080.pdf>] [37 <./images/mciChernoffFaces607080.pdf>]
-[38 <./images/alzChernoffFaces50607080.pdf>] [39 <./images/resid1500treesCVerro
-r.pdf>] [40 <./images/full1500treesCVerror.pdf>]
+) (./sections/analysiseval.tex [38] [39 <./images/resid1500treesCVerror.pdf> <.
+/images/full1500treesCVerror.pdf>]
 Chapter 4.
-[41
+[40
 
-] [42]) (./sections/conclusion.tex [43]
+] [41]) (./sections/conclusion.tex [42]
 Chapter 5.
 )
 Overfull \hbox (3.89876pt too wide) in paragraph at lines 9--64
@@ -1214,39 +1200,35 @@ Overfull \hbox (3.89876pt too wide) in paragraph at lines 9--64
 -vi-ous stud-ies. [Hornero
  []
 
-(./report.bbl [44
+(./report.bbl [43
 
-] [45
+] [44
 
-] [46]) [47] (./report.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+] [45]) [46] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 22323 strings out of 495028
- 501238 string characters out of 6181498
- 668731 words of memory out of 5000000
- 24986 multiletter control sequences out of 15000+600000
+ 22324 strings out of 495028
+ 501253 string characters out of 6181498
+ 665731 words of memory out of 5000000
+ 24987 multiletter control sequences out of 15000+600000
  10995 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,10n,81p,1410b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-i12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pf
-b>
-Output written on report.pdf (48 pages, 1044359 bytes).
+ 56i,10n,81p,1549b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmtt12.pfb>
+Output written on report.pdf (47 pages, 1046273 bytes).
 PDF statistics:
- 324 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
+ 321 PDF objects out of 1000 (max. 8388607)
+ 218 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

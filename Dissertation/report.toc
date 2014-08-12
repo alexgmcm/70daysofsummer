@@ -14,10 +14,10 @@
 \contentsline {section}{\numberline {3.4}Model Fitting}{20}
 \contentsline {section}{\numberline {3.5}Data visualisation}{22}
 \contentsline {subsection}{\numberline {3.5.1}t-Distributed Stochastic Neighbour Embedding}{23}
-\contentsline {subsection}{\numberline {3.5.2}Principal Components Analysis}{24}
-\contentsline {subsection}{\numberline {3.5.3}Parallel Coordinates plots}{27}
-\contentsline {subsection}{\numberline {3.5.4}Chernoff Faces}{28}
-\contentsline {section}{\numberline {3.6}Classification}{30}
-\contentsline {chapter}{\numberline {4}Analysis and Evaluation}{41}
-\contentsline {chapter}{\numberline {5}Conclusion and future work}{44}
-\contentsline {chapter}{Bibliography}{45}
+\contentsline {subsection}{\numberline {3.5.2}Principal Components Analysis}{28}
+\contentsline {subsection}{\numberline {3.5.3}Parallel Coordinates plots}{31}
+\contentsline {subsection}{\numberline {3.5.4}Chernoff Faces}{33}
+\contentsline {section}{\numberline {3.6}Classification}{36}
+\contentsline {chapter}{\numberline {4}Analysis and Evaluation}{40}
+\contentsline {chapter}{\numberline {5}Conclusion and future work}{43}
+\contentsline {chapter}{Bibliography}{44}

@@ -3,47 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: report.aux
 The style file: apalike.bst
 Database file #1: refs/bibliography.bib
-Warning--I didn't find a database entry for "Seifert2010"
 Warning--there's a number but no volume in Welch1967
-You've used 26 entries,
+You've used 27 entries,
             1935 wiz_defined-function locations,
-            662 strings with 8833 characters,
-and the built_in function-call counts, 11042 in all, are:
-= -- 1089
-> -- 498
-< -- 16
-+ -- 170
-- -- 170
-* -- 984
-:= -- 1922
-add.period$ -- 79
-call.type$ -- 26
-change.case$ -- 215
-chr.to.int$ -- 26
-cite$ -- 27
-duplicate$ -- 385
-empty$ -- 735
-format.name$ -- 214
-if$ -- 2131
+            667 strings with 8996 characters,
+and the built_in function-call counts, 11446 in all, are:
+= -- 1131
+> -- 511
+< -- 17
++ -- 174
+- -- 174
+* -- 1021
+:= -- 1990
+add.period$ -- 82
+call.type$ -- 27
+change.case$ -- 222
+chr.to.int$ -- 27
+cite$ -- 28
+duplicate$ -- 399
+empty$ -- 765
+format.name$ -- 221
+if$ -- 2210
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 29
-newline$ -- 133
-num.names$ -- 78
-pop$ -- 169
+missing$ -- 30
+newline$ -- 138
+num.names$ -- 81
+pop$ -- 173
 preamble$ -- 1
-purify$ -- 215
+purify$ -- 222
 quote$ -- 0
-skip$ -- 299
+skip$ -- 310
 stack$ -- 0
-substring$ -- 797
-swap$ -- 46
+substring$ -- 834
+swap$ -- 47
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 150
+type$ -- 156
 warning$ -- 1
-while$ -- 93
+while$ -- 97
 width$ -- 0
-write$ -- 341
-(There were 2 warnings)
+write$ -- 354
+(There was 1 warning)

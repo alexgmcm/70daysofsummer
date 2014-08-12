@@ -143,7 +143,7 @@ t-Distributed Stochastic Neighbour Embedding (t-SNE)\cite{Maaten2008} is a data 
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=\textwidth]{mnisttsne.png}
+    \includegraphics[width=.8\textwidth]{mnisttsne.png}
     \caption{The t-SNE visualisation of 6000 handwritten digits from the MNIST data set.\cite{Maaten2008} Note that the classes are clearly separable.}
     \label{fig:mnisttsne}
 \end{figure}
@@ -154,7 +154,7 @@ t-SNE plots of each class (healthy, MCI or AD) with the samples separated by age
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=\textwidth]{htsneplot.pdf}
+    \includegraphics[width=.8\textwidth]{htsneplot.pdf}
     \caption{The t-SNE visualisation of the healthy subjects, divided into age groups. Note that the groups are not separable.}
     \label{fig:htsneplot}
 \end{figure}
@@ -162,7 +162,7 @@ t-SNE plots of each class (healthy, MCI or AD) with the samples separated by age
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=\textwidth]{mcitsneplot.pdf}
+    \includegraphics[width=.8\textwidth]{mcitsneplot.pdf}
     \caption{The t-SNE visualisation of the MCI patients, divided into age groups. Note that the groups are not separable.}
     \label{fig:mcitsneplot}
 \end{figure}
@@ -170,7 +170,7 @@ t-SNE plots of each class (healthy, MCI or AD) with the samples separated by age
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=\textwidth]{alztsneplot.pdf}
+    \includegraphics[width=.8\textwidth]{alztsneplot.pdf}
     \caption{The t-SNE visualisation of the AD patients, divided into age groups. Note that the groups are not separable.}
     \label{fig:alztsneplot}
 \end{figure}
@@ -181,7 +181,7 @@ The total dataset was plotted to see if it was possible to distinguish between t
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=\textwidth]{tottsneplot.pdf}
+    \includegraphics[width=.8\textwidth]{tottsneplot.pdf}
     \caption{The t-SNE visualisation of all the groups. Note that the groups are not separable but this could be due to the effect of age.}
     \label{fig:tottsneplot}
 \end{figure}
@@ -189,11 +189,12 @@ The total dataset was plotted to see if it was possible to distinguish between t
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=\textwidth]{seventiestsneplot.pdf}
+    \includegraphics[width=.8\textwidth]{seventiestsneplot.pdf}
     \caption{The t-SNE visualisation of the all the groups, only subjects aged 70-79. Note that the groups are not separable. This implies classification will be difficult if not impossible.}
     \label{fig:seventiestsneplot}
 \end{figure}
 
+\clearpage
 
 
 \subsection{Principal Components Analysis}
@@ -221,7 +222,7 @@ Plots were produced for the healthy dataset across all age groups as shown in Fi
 \end{figure}
 
 
-
+\clearpage
 \subsection{Parallel Coordinates plots}
 
 A popular method to investigate the relationships between variables is the Parallel Coordinates Plot (PCP). It can also be used to examine the differences between classes and has had many applications ranging from optimising manufacturing to economic modelling \cite{Inselberg1997}.
@@ -230,32 +231,32 @@ The PCPs were produced using the reduced feature set (the same as used for the P
 
 In the PCP each polyline represents a datapoint and it intercepts the axes at the value it has in the dimension represented by that axis. Therefore parallel lines between axes indicate a positive correlation between them, where crossing of lines in an X-shape indicates a negative correlation and random crossing indicates little or no relation.\cite{Inselberg1997}
 
-\begin{figure}[h!]
+\begin{figure}[h]
   \centering
-    \includegraphics[width=\textwidth]{hparacoords.pdf}
+    \includegraphics[width=.8\textwidth]{hparacoords.pdf}
     \caption{The Parallel Coordinate Plot of the healthy dataset divided into different age groups, there is no discernable pattern or separation between them}
     \label{fig:hparacoords}
 \end{figure}
 
 
-\begin{figure}[h!]
+\begin{figure}[h]
   \centering
-    \includegraphics[width=\textwidth]{mciparacoords.pdf}
+    \includegraphics[width=.8\textwidth]{mciparacoords.pdf}
     \caption{The Parallel Coordinate Plot of the MCI dataset divided into different age groups, there is no discernable pattern or separation between them}
     \label{fig:mciparacoords}
 \end{figure}
 
 
-\begin{figure}[h!]
+\begin{figure}[h]
   \centering
-    \includegraphics[width=\textwidth]{alzparacoords.pdf}
+    \includegraphics[width=.8\textwidth]{alzparacoords.pdf}
     \caption{The Parallel Coordinate Plot of the Alzheimer's dataset divided into different age groups, there is no discernable pattern or separation between them}
     \label{fig:alzparacoords}
 \end{figure}
 
 As can be seen in Figures \ref{fig:hparacoords}, \ref{fig:mciparacoords} and \ref{fig:alzparacoords} there was no clear distinction between the age groups which further explains why the model for predicting age from the relative powers wasn't very successful and corroborates the results of the t-SNE and PCA projections.
 
-
+\clearpage
 \subsection{Chernoff Faces}
 
 A final and perhaps whimsical method of visualising multidimensional data is the \textit{glyph} based approach of Chernoff faces. These use the values of feature that a sample has to construct a human face, with the feature values being used to determine the size and shape of various parts of the face such as the eyes, mouth etc. The reasoning behind such a visualisation is that the human mind is adept at discerning the differences between human faces and thus can distinguish between relatively similar data more easily when it is presented in this manner. \cite{Chernoff1973}
@@ -290,23 +291,23 @@ Gamma & Vertical position of eyes\\
 The datasets for the different classes were separated into the same age groups as before and averaged to produce `composite' Chernoff faces for each age group, note that the MCI dataset had no subjects aged 50-59 and thus it only has faces for the 60-69, 70-79 and 80-89 age groups.
 
 
-\begin{figure}[h!]
+\begin{figure}[h]
   \centering
-    \includegraphics[width=\textwidth]{hChernoffFaces50607080.pdf}
+    \includegraphics[width=.8\textwidth]{hChernoffFaces50607080.pdf}
     \caption{The Chernoff faces for the healthy dataset. Face 1 is age group 50-59, Face 2 is age group 60-69, Face 3 is age group 70-79, Face 4 is age group 80-89}
     \label{fig:hchernoff}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[h]
   \centering
-    \includegraphics[width=\textwidth]{mciChernoffFaces607080.pdf}
+    \includegraphics[width=.8\textwidth]{mciChernoffFaces607080.pdf}
     \caption{The Chernoff faces for the MCI dataset. Face 1 is age group 60-69, Face 2 is age group 70-79, Face 3 is age group 80-89}
     \label{fig:mcichernoff}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[h]
   \centering
-    \includegraphics[width=\textwidth]{alzChernoffFaces50607080.pdf}
+    \includegraphics[width=.8\textwidth]{alzChernoffFaces50607080.pdf}
     \caption{The Chernoff faces for the Alzheimer's Disease dataset. Face 1 is age group 50-59, Face 2 is age group 60-69, Face 3 is age group 70-79, Face 4 is age group 80-89}
     \label{fig:alzchernoff}
 \end{figure}
@@ -315,7 +316,7 @@ We can observe some differences between the age groups which perhaps explains wh
 
 
 
-
+\clearpage
 
 
 \section{Classification}
@@ -392,9 +393,13 @@ MCI & 19 & 6.83\% \\
 \end{table}
 
 
+
+
 The confusion matrices shown in Tables \ref{tab:residconfusion} and \ref{tab:fulldataconfusion} are taken from the final fold of cross-validation for classifiers fit to the residuals from the linear regression model and to the full feature set respectively. In the ideal case all of the examples would be on the leading diagonal of the matrix, as these are the correctly classified examples.
 
-The average cross-validated classification accuracy across 10-fold was 76.26\% for the classifier trained on the residuals of the linear regression model and 47.48\% for the classifier trained on the complete relative power feature set.
+The average cross-validated classification accuracy across 10-fold was 76.26\% for the classifier trained on the residuals of the linear regression model and 47.48\% for the classifier trained on the complete relative power feature set. However a dummy classifier that simply predicted the majority class all the time would get a classification accuracy of 79.14\% despite being a useless classifier. Therefore it is better to use a figure of merit that takes into account the number of false positives and false negatives. One such measure for multi-class classification is the macro-averaged $F_1$ score. Which can be defined as the harmonic mean of the precision and recall values for each class, averaged over the classes.\cite{Sokolova2009} An $F_{1M}$ score of 1 is ideal, whilst 0 is the worst possible score. 
+
+The $F_{1M}$ scores were 0.542, 0.458 and 0.294 the training on the linear regression model residuals, the full feature set and from the dummy classifier respectively. 
 
 The classifiers consisted of a boosted ensemble of 1500 decision trees. As shown in Figures \ref{fig:resid1500treesCVerror} and \ref{fig:full1500treesCVerror} the classification error began to plateau at 1500 weak learners and adding more and more would eventually lead to overfitting and an increasing error rate, but as it was computationally expensive and even 1500 learners was quite time-consuming to train ($\approx30$ minutes training time) it seemed appropriate to stop once such diminishing returns were observed.
 
@@ -402,7 +407,7 @@ The classifiers consisted of a boosted ensemble of 1500 decision trees. As shown
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=\textwidth]{resid1500treesCVerror.pdf}
+    \includegraphics[width=.8\textwidth]{resid1500treesCVerror.pdf}
     \caption{The classification error plotted as a a function of the number of weak classifiers for the ensemble trained on the residuals of the linear regression model}
     \label{fig:resid1500treesCVerror}
 \end{figure}
@@ -411,7 +416,7 @@ The classifiers consisted of a boosted ensemble of 1500 decision trees. As shown
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=\textwidth]{full1500treesCVerror.pdf}
+    \includegraphics[width=.8\textwidth]{full1500treesCVerror.pdf}
     \caption{The classification error plotted as a a function of the number of weak classifiers for the ensemble trained on the full feature set of thirty relative powers}
     \label{fig:full1500treesCVerror}
 \end{figure}
