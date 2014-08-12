@@ -399,7 +399,28 @@ The confusion matrices shown in Tables \ref{tab:residconfusion} and \ref{tab:ful
 
 The average cross-validated classification accuracy across 10-fold was 76.26\% for the classifier trained on the residuals of the linear regression model and 47.48\% for the classifier trained on the complete relative power feature set. However a dummy classifier that simply predicted the majority class all the time would get a classification accuracy of 79.14\% despite being a useless classifier. Therefore it is better to use a figure of merit that takes into account the number of false positives and false negatives. One such measure for multi-class classification is the macro-averaged $F_1$ score. Which can be defined as the harmonic mean of the precision and recall values for each class, averaged over the classes.\cite{Sokolova2009} An $F_{1M}$ score of 1 is ideal, whilst 0 is the worst possible score. 
 
-The $F_{1M}$ scores were 0.542, 0.458 and 0.294 the training on the linear regression model residuals, the full feature set and from the dummy classifier respectively. 
+The general $F_{\beta M}$ score allows one to weigh the relative importance of precision and recall, i.e. the effects of false positive versus false negatives. In the multi-class case it is defined as:
+
+\begin{equation}
+F_{\beta M} = \frac{(\beta^2 +1) \textrm{Prec}_M \textrm{Rec}_M}{\beta^2 \textrm{Prec}_M + \textrm{Rec}_M}
+\label{eq:fbeta}
+\end{equation}
+
+where the macro-averaged precision and recall values, $\textrm{Prec}_M$ and $\textrm{Rec}_M$ are defined as:
+
+\begin{equation}
+\textrm{Prec}_M = \frac{\sum\limits^{L}_{i=1} \frac{tp_i}{tp_i +fp_i}}{L}
+\end{equation}
+
+and
+\begin{equation}
+\textrm{Rec}_M = \frac{\sum\limits^{L}_{i=1} \frac{tp_i}{tp_i +fn_i}}{L}
+\end{equation}
+
+where $L$ is the total number of classes and $tp_i$, $fp_i$ and $fn_i$ are the number of true positives, false positives and false negatives for that class respectively. Note that the $F_{1M}$ is simply calculated using Equation \ref{eq:fbeta} with $\beta = 1$
+
+
+The $F_{1M}$ scores were 0.542, 0.458 and 0.294 for training on the linear regression model residuals, the full feature set and from the dummy classifier respectively. 
 
 The classifiers consisted of a boosted ensemble of 1500 decision trees. As shown in Figures \ref{fig:resid1500treesCVerror} and \ref{fig:full1500treesCVerror} the classification error began to plateau at 1500 weak learners and adding more and more would eventually lead to overfitting and an increasing error rate, but as it was computationally expensive and even 1500 learners was quite time-consuming to train ($\approx30$ minutes training time) it seemed appropriate to stop once such diminishing returns were observed.
 

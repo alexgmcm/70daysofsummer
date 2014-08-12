@@ -21,6 +21,6 @@
 \contentsline {figure}{\numberline {3.17}{\ignorespaces The Chernoff faces for the MCI dataset. Face 1 is age group 60-69, Face 2 is age group 70-79, Face 3 is age group 80-89\relax }}{34}
 \contentsline {figure}{\numberline {3.18}{\ignorespaces The Chernoff faces for the Alzheimer's Disease dataset. Face 1 is age group 50-59, Face 2 is age group 60-69, Face 3 is age group 70-79, Face 4 is age group 80-89\relax }}{35}
 \contentsline {figure}{\numberline {3.19}{\ignorespaces The classification error plotted as a a function of the number of weak classifiers for the ensemble trained on the residuals of the linear regression model\relax }}{39}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces The classification error plotted as a a function of the number of weak classifiers for the ensemble trained on the full feature set of thirty relative powers\relax }}{39}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces The classification error plotted as a a function of the number of weak classifiers for the ensemble trained on the full feature set of thirty relative powers\relax }}{40}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

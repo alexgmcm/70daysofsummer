@@ -18,6 +18,6 @@
 \contentsline {subsection}{\numberline {3.5.3}Parallel Coordinates plots}{31}
 \contentsline {subsection}{\numberline {3.5.4}Chernoff Faces}{33}
 \contentsline {section}{\numberline {3.6}Classification}{36}
-\contentsline {chapter}{\numberline {4}Analysis and Evaluation}{40}
-\contentsline {chapter}{\numberline {5}Conclusion and future work}{43}
-\contentsline {chapter}{Bibliography}{44}
+\contentsline {chapter}{\numberline {4}Analysis and Evaluation}{41}
+\contentsline {chapter}{\numberline {5}Conclusion and future work}{44}
+\contentsline {chapter}{Bibliography}{45}

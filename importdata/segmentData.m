@@ -1,1 +1,0 @@
-%split data into epochs and perform artefact rejection

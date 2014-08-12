@@ -1,6 +1,0 @@
-pcahealthyplot notes
-these 2 components explained 86.76% of the variance of the data
-fifties in green
-sixties in blue
-seventies in red
-eighties in magenta
